@@ -14,7 +14,8 @@ Tình cờ mình tìm được một hàm nhận những strings đó (sau khi �
  
  ![113](https://user-images.githubusercontent.com/84214843/118347072-94a60080-b56a-11eb-8eb6-fb30b6ecf774.png)
  
-Và đây chính là hàm main mà chúng ta sẽ phân tích
+Và đây chính là hàm main mà chúng ta sẽ phân tích.
+
 Phân tích nhanh ta thấy được input ta đưa vào là v4[i], sau đó được encoded thông qua hàm sub_401328 và output sẽ được so sánh 
 với qword_50E010
 
@@ -26,6 +27,9 @@ Output sẽ được so sánh với qword_50E010:
 ![113](https://user-images.githubusercontent.com/84214843/118347862-704d2280-b570-11eb-8a93-e5829ae34a6f.png)
 
 Vậy bây giờ ta chỉ cần extract thuật toán trong hàm encrypted rồi bruteforce để tìm flag thôi :)) ez
+(solve.py)
+
+Flag: w1thOut_A_mUrmUr...
 
 
 
