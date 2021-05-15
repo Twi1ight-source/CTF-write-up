@@ -10,6 +10,12 @@ Tình cờ mình tìm được một hàm nhận những strings đó (sau khi �
 đó là tại địa chỉ 0x401584
 ![401584](https://user-images.githubusercontent.com/84214843/118347039-4f81ce80-b56a-11eb-8619-70644bc9db28.png)
 
+ giờ chỉ việc sau đó bấm P để define function rồi F5 để xem mã giả C thôi :))
+ 
+ ![113](https://user-images.githubusercontent.com/84214843/118347072-94a60080-b56a-11eb-8eb6-fb30b6ecf774.png)
+ 
+đây là hàm chúng ta sẽ phân tích 
+
 
 
 
