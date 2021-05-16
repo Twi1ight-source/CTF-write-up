@@ -6,7 +6,9 @@ Js source code:
 ![113](https://user-images.githubusercontent.com/84214843/118392058-b2a25c80-b661-11eb-9ea6-3f5f3ef8a8d4.png)
 
 Mình dump file wasm về dùng: wget http://challenges.ctfd.io:30039 -q -O watman.wasm
+
 Sau đó dùng wasm2c để lấy header và souces C file(wasm2c watman.wasm -o wasm.c)
+
 tiếp đến compiled thành C binary để dễ phân tích hơn: (gcc -O3 source.c wasm-rt-impl.c)
 
 Decompiled in IDA:
