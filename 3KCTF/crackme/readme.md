@@ -22,7 +22,8 @@ Thông qua debug mình thấy được nó lấy data dưới dạng nhị phân
 
 +3 số tiếp theo [6,1,1] cũng nhảy vô trường hợp 6 và lấy byte 0x91
 
-debug thêm nhiều cái nữa mình đưa ra kết luận:
+Debug thêm nhiều cái nữa mình đưa ra kết luận:
+
   ->trong chuỗi 3 số mỗi lần lấy thì số đầu tiên là trường hợp, số thứ hai,ba là thứ tự thanh ghi (riêng trường hợp 4,6,12,13  thì số thứ ba là giá trị byte thứ 2048+ số thứ ba)
   
   ->vì thế ta có thể nói rằng trong data của unk_1040 thì 2048 bytes đầu để tạo instructions và các bytes còn lại là giá trị cho các thanh ghi
