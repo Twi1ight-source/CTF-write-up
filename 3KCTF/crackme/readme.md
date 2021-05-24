@@ -19,14 +19,17 @@ Hàm sub_DA0:
 tới đây mình vẫn chưa thể hiểu rõ cách hoạt động của VM( các registers và instructions) vì thế mình quyết địng debug 
 Thông qua debug mình thấy được nó lấy data dưới dạng nhị phân của unk_1040:6 0 0 6 1 1 6 2 2 ..... và  nó lấy 3 số với mỗi lần lăp:
 +[6.0.0]  thì nó nhảy vô trường hợp 6 và lấy byte 0xba
+
 +3 số tiếp theo [6,1,1] cũng nhảy vô trường hợp 6 và lấy byte 0x91
 
 debug thêm nhiều cái nữa mình đưa ra kết luận:
   ->trong chuỗi 3 số mỗi lần lấy thì số đầu tiên là trường hợp, số thứ hai,ba là thứ tự thanh ghi (riêng trường hợp 4,6,12,13  thì số thứ ba là giá trị byte thứ 2048+ số thứ ba)
+  
   ->vì thế ta có thể nói rằng trong data của unk_1040 thì 2048 bytes đầu để tạo instructions và các bytes còn lại là giá trị cho các thanh ghi
+  
   -> tổng có 4 thanh ghi là R0, R1 ,R2, R3
   
-  biết được cách hoạt động rồi mình sẽ viết disassembler để tự động phân tích hết các bytes trong unk_1040
+  Biết được cách hoạt động rồi mình sẽ viết disassembler để tự động phân tích hết các bytes trong unk_1040
   
   (disass.py) và kết quả output (data.txt)
   
@@ -34,8 +37,10 @@ debug thêm nhiều cái nữa mình đưa ra kết luận:
   
   ![113](https://user-images.githubusercontent.com/84214843/119294163-08888d00-bc7e-11eb-88f6-701a42f43bbd.png)
   
-  Ta thấy mỗi block lấy R0 băng getc() và kết thúc bằng R3, tình cờ mình tính được nếu cho R3=0 thì R0=0x63(chính là 'c')
-  block thứ 2, lấy R3 bằng 0 -> thì R0= 0x8b ^ 0xff= 0x74(chính là 't')  
+  ->Ta thấy mỗi block lấy R0 băng getc() và kết thúc bằng R3, tình cờ mình tính được nếu cho R3=0 thì R0=0x63(chính là 'c')
+  
+  ->block thứ 2, lấy R3 bằng 0 -> thì R0= 0x8b ^ 0xff= 0x74(chính là 't')  
+  
   Đó là khới đầu ctf{  :)))))))) , tới đây mình có thể kết luận với mỗi block R0 lấy mỗi chữ trong input với getc và check xem R3 có bằng 0 không.
   
  Tới đây mình chỉ việc viết script bruce-force R0 với mỗi block là được flag =)))
