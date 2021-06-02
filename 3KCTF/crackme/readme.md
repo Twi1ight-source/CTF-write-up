@@ -18,6 +18,7 @@ Hàm sub_DA0:
 
 tới đây mình vẫn chưa thể hiểu rõ cách hoạt động của VM( các registers và instructions) vì thế mình quyết địng debug 
 Thông qua debug mình thấy được nó lấy data dưới dạng nhị phân của unk_1040:6 0 0 6 1 1 6 2 2 ..... và  nó lấy 3 số với mỗi lần lăp:
+
 +[6.0.0]  thì nó nhảy vô trường hợp 6 và lấy byte 0xba
 
 +3 số tiếp theo [6,1,1] cũng nhảy vô trường hợp 6 và lấy byte 0x91
