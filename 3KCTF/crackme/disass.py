@@ -6,7 +6,7 @@ file = open("bin","rb").read()
 def readIns(ip):
 	ins = []
 	for i in range(3):
-		ins.append(file[ip + i])
+		ins.append(file[ip + i])                #đọc 2 byte tiếp theo từ vị trđóđó
 	return ins
 
 def onevar(opc, fmt):
@@ -41,8 +41,6 @@ ip = 0
 
 while(ip < len(file)):
 	opc = readIns(ip)
-	print("0x"+hex(ip)[2:].zfill(3), end="\t")
-
 
 	if opcodes[opc[0]][1] is None:
 		print(opcodes[opc[0]][0])
@@ -50,7 +48,7 @@ while(ip < len(file)):
 		desc = opcodes[opc[0]][1](opc, opcodes[opc[0]][0])
 		print(desc)
 
-	if(opc[0] == 101 or opc[0] == 9):
+	if(opc[0] == 101 or opc[0] == 9):           #do tại trường hợp 9 là exit 
 		break
 
     ip+=3
