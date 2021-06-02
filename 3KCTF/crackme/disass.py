@@ -50,5 +50,7 @@ while(ip < len(file)):
 
 	if(opc[0] == 101 or opc[0] == 9):           #do tại trường hợp 9 là exit 
 		break
-
-    ip+=3
+	
+	if (opc[0]==10):
+		print('""","""')
+    	ip+=3
