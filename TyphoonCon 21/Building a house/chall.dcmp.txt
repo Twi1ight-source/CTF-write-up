@@ -1,0 +1,1091 @@
+export memory memory(initial: 256, max: 256);
+
+global g_a:int = 5245824;
+global g_b:int = 0;
+global g_c:int = 0;
+global g_d:int = 1424;
+global g_e:int = 2868;
+
+export table indirect_function_table:funcref(min: 1, max: 1);
+
+data d_dmFyIG9yaWdpbmFsPXdpbmRvd1si(offset: 1024) = 
+  "\de\ad\be\ef\00dmFyIG9yaWdpbmFsPXdpbmRvd1siY29uc29sZSJdWyJsb2ciXTt2YXI"
+  "gZmFrZT1mdW5jdGlvbihhcmd1bWVudCl7b3JpZ2luYWwoIlN0b3AgdXNpbmcgRGV2VG9vb"
+  "HMsIG5vIGZsYWcgZm9yIHlvdSA6fCIpfTt3aW5kb3dbImNvbnNvbGUiXVsibG9nIl09ZmF"
+  "rZTs=\00Correct :)\00Wrong :(\00\00\00\00\00\00\00\00\00\00\00\00\00\00"
+  "\00=\NP<===<\ba\bd\bd\bd=<]?BB<B>\bf\bd\bd\bd=<=9\b9\bd\bd\bd=<M==8\be"
+  "\bd\bd\bd=<=<;\bc\bd\bd\bd==:\b3\bd\bd\bd=?;PXPROD?=<[==7\a7\bd\bd\bd="
+  "<\a9\bd\bd\bd==\1d=|5\1d<VH\1d=\1d<IO|\c2<L6\096\13\d7\12\b8\e9\9c\9c\96"
+  "\cf\eb\e0";
+data d_uCV5GDCh6D0(offset: 1392) = 
+"\14u`C=\12V5G\15D\0a"\0cC/h\04\016&\15D'<&\01\01'0\0b/";
+data d_c(offset: 1424) = "";
+
+import function env_emscripten_asm(a:int, b:int, c:int):int;      #take func from chall.js
+
+import function env_emscripten_memcpy_big(a:int, b:int, c:int):int;
+
+export function wasm_call_ctors() {
+  emscripten_stack_init()
+}
+
+export function emscripten_heap_init() {
+  var a:int = g_a;
+  var b:int = 32;
+  var c:int = a - b;
+  g_a = c;
+  var d:int = 1029;
+  c[7]:int = d;
+  var e:int = 1424;
+  c[6]:int = e;
+  var f:int = c[6]:int;
+  var g:int = 105;
+  c[21]:byte = g;
+  var h:int = 105;
+  c[22]:byte = h;
+  var i:int = 0;
+  c[23]:byte = i;
+  var j:int = 21;
+  var k:int = c + j;
+  var l:int = k;
+  var m:int = c[7]:int;
+  var n:int = 200;
+  c[1]:int = n;
+  c[0]:int = m;
+  env_emscripten_asm(f, l, c);
+  var o:int = 32;
+  var p:int = c + o;
+  g_a = p;
+}
+
+function f_e(a:int, b:int, c:int):int {     #([2908], 5, 233)
+  var d:int = g_a;
+  var e:int = 176;
+  var f:int = d - e;      #f= g_a - 176
+  g_a = f;
+  f[43]:int = a;          #f[43]=[2908]
+  f[42]:int = b;          #f[42]=5
+  f[41]:int = c;          #f[41]= 233
+  var g:int = 48;
+  var h:int = f + g;      #h= g_a-176+48
+  var i:int = h;          #i=h
+  var j:int = 1264;
+  var k:int = 107;
+  f_l(i, j, k);           #f_l (g_a-176+48, 1264, 107)
+  var l:int = 0;
+  f[11]:int = l;
+  loop L_b {              #loop
+    var m:int = f[11]:int;
+    var n:int = 107;
+    var o:int = m;
+    var p:int = n;
+    var q:int = o < p;
+    var r:int = 1;
+    var s:int = q & r;
+    if (eqz(s)) goto B_a;
+    var t:int = f[11]:int;
+    var u:int = 48;
+    var v:int = f + u;
+    var w:int = v;
+    var x:ubyte_ptr = w + t;
+    var y:int = x[0];
+    var z:int = 24;
+    var aa:int = y << z;
+    var ba:int = aa >> z;
+    var ca:int = 61;
+    var da:int = ba ^ ca;
+    var ea:int = 255;
+    var fa:int = da & ea;
+    var ga:int = f[11]:int;
+    var ha:int = 48;
+    var ia:int = f + ha;
+    var ja:int = ia;
+    var ka:byte_ptr = ja + ga;
+    ka[0] = fa;
+    var la:int = f[11]:int;
+    var ma:int = 1;
+    var na:int = la + ma;
+    f[11]:int = na;
+    continue L_b;
+  }
+  unreachable;
+  label B_a:
+  var oa:int = 1532;
+  f[9]:int = oa;
+  var pa:int = f[9]:int;
+  var qa:int = 105; 
+  f[30]:byte = qa;            #f[30]=105
+  var ra:int = 105;
+  f[31]:byte = ra;            #f[31]=105
+  f[31]:byte = ra;            #
+  var sa:int = 105;
+  f[32]:byte = sa;            #f[32]=105
+  var ta:int = 105;
+  f[33]:byte = ta;            #f[33]=105
+  var ua:int = 105;
+  f[34]:byte = ua;            #f[34]=105
+  var va:int = 0;
+  f[35]:byte = va;            #f[35]=105
+  var wa:int = 30;
+  var xa:int = f + wa;
+  var ya:int = xa;              #ya= f+30
+  var za:int = f[43]:int;
+  var ab:int = f[42]:int;
+  var bb:int = f[41]:int;
+  var cb:int = 48;
+  var db:int = f + cb;
+  var eb:int = db;
+  var fb:int = 16;
+  var gb:int_ptr = f + fb;
+  var hb:int = 107;
+  gb[0] = hb;
+  f[3]:int = eb;                  #f[3]=f + 48
+  f[2]:int = bb;                  #f[2]=f[41]=233
+  f[1]:int = ab;                  #f[1]=f[42]=5
+  f[0]:int = za;                  #f[0]=f[43]=[2908]
+  var ib:int = env_emscripten_asm(pa, ya, f);   #env_emscripten_asm(1532,f+30,f)
+  f[10]:int = ib;
+  var jb:int = f[10]:int;
+  var kb:int = 176;
+  var lb:int = f + kb;
+  g_a = lb;
+  return jb;
+}
+
+function f_f(a:int, b:int, c:int):int {
+  var d:int = g_a;
+  var e:int = 48;
+  var f:int = d - e;        
+  g_a = f;                  #g_a -=48
+  f[11]:int = a;            #f[11]= [2889]
+  f[10]:int = b;            #f[10]= [2907]
+  f[9]:int = c;             #f[9]= [2881]
+  var g:int = 1795;
+  f[7]:int = g;             #f[7]=1795
+  var h:int = f[7]:int;     #h=1795
+  var i:int = 105;          
+  f[24]:byte = i;           #f[24]=105
+  var j:int = 105;
+  f[25]:byte = j;           #f[25]= 105
+  var k:int = 105;
+  f[26]:byte = k;           #f[26]= 105
+  var l:int = 0;
+  f[27]:byte = l;           #f[27]= 0
+  var m:int = 24;
+  var n:int = f + m;        #n= g_a -48 + 24
+  var o:int = n;            #o= g_a -48 + 24
+  var p:int = f[11]:int;
+  var q:int = f[10]:int;
+  var r:int = f[9]:int;
+  f[2]:int = r;
+  f[1]:int = q;
+  f[0]:int = p;
+  var s:int = env_emscripten_asm(h, o, f);   #s=nv_emscripten_asm(1795, ['i','i','i'], [[2889],[297],[2881]])
+  f[8]:int = s;
+  var t:int = f[8]:int;
+  var u:int = 48;
+  var v:int = f + u;
+  g_a = v;
+  return t;
+}
+
+function f_g(a:int, b:int):int {    (8,5)
+  var c:int = g_a;
+  var d:int = 32;
+  var e:int_ptr = c - d;
+  e[6] = a;                     #e[6]=8
+  e[5] = b;                     #e[5]=5
+  var f:int = 15;
+  var g:int = e + f;            #g= e+15
+  var h:int_ptr@1 = g;
+  var i:int = 4;
+  var j:byte_ptr = h + i;       #j=e+15+4
+  var k:int = 0;
+  var l:int = k[1375]:ubyte;    
+  j[0] = l;                     #j[0]= [1375]
+  var m:int = k[1371]:int@1;    
+  h[0] = m;                     #h[0]= [1371]
+  var n:int = 0;
+  e[2] = n;                     #e[2]=0
+  loop L_c {
+    var o:int = e[2];           #counter
+    var p:int = e[5];           #e[5]=b=5
+    var q:int = o;
+    var r:int = p;
+    var s:int = q < r;
+    var t:int = 1;
+    var u:int = s & t;          
+    if (eqz(u)) goto B_b;      #if (e[2]<e[5] &1)==0, jmp B_b
+    var v:int = e[6];          #v= e[6]=a=8
+    var w:int = e[2];           #w= e[2]=0
+    var x:ubyte_ptr = v - w;    #x= a- e[2]=8-0
+    var y:int = x[2880];        #y= [2880][x](inp[a-e[2]])
+    var z:int = 24;
+    var aa:int = y << z;
+    var ba:int = aa >> z;
+    var ca:int = e[6];
+    var da:int = e[2];
+    var ea:int = ca - da;     #ea= a- e[2]
+    var fa:int = 1;
+    var ga:ubyte_ptr = ea - fa; #ga =a-e[2]-1
+    var ha:int = ga[2880];      #inp [a-e[2]-1]
+    var ia:int = 24;
+    var ja:int = ha << ia;
+    var ka:int = ja >> ia;
+    var la:int = ba - ka;   #inp[a-e[2]] - inp [a-e[2]-1]
+    var ma:int = e[2];
+    var na:int = 15;
+    var oa:int = e + na;    #e+15
+    var pa:int = oa;
+    var qa:ubyte_ptr = pa + ma;  #e+15+e[2]
+    var ra:int = qa[0];
+    var sa:int = 24;
+    var ta:int = ra << sa;
+    var ua:int = ta >> sa;
+    var va:int = la;
+    var wa:int = ua;
+    var xa:int = va != wa;
+    var ya:int = 1;
+    var za:int = xa & ya;     #(inp[a-e[2]] - inp [a-e[2]-1]) &1
+    if (eqz(za)) goto B_d;    #((inp[a-e[2]] - inp [a-e[2]-1]) !=(e+15+e[2])[0]) &1 ==0
+    var ab:int = 0;
+    e[7] = ab;
+    goto B_a;
+
+    label B_d:
+    var bb:int = e[2];
+    var cb:int = 1;
+    var db:int = bb + cb;
+    e[2] = db;          #e[2]+=1
+    continue L_c;
+  }
+  unreachable;
+
+  label B_b:
+  var eb:int = 1;
+  e[7] = eb;
+  label B_a:
+  var fb:int = e[7];
+  return fb;
+}
+
+function f_h(a:int, b:int, c:int):int {
+  var d:int = g_a;
+  var e:int = 48;
+  var f:int = d - e;
+  g_a = f;
+  f[11]:int = a;    #f[11]=a=11
+  f[10]:int = b;    #f[10]=b=12
+  f[9]:int = c;     #f[9]=c=13
+  var g:int = 2521;
+  f[7]:int = g;     #f[7]=2521
+  var h:int = f[7]:int;
+  var i:int = 105;
+  f[24]:byte = i;   #f[24]=105
+  var j:int = 105;
+  f[25]:byte = j;   #f[25]=105
+  var k:int = 105;
+  f[26]:byte = k;   #f[26]=105
+  var l:int = 0;
+  f[27]:byte = l;   #f[27]=0
+  var m:int = 24;
+  var n:int = f + m;  #n=f+24
+  var o:int = n;
+  var p:ubyte_ptr = f[11]:int;    #p=f[11]=11
+  var q:int = p[2880];          #q=inp[11]
+  var r:int = 24;
+  var s:int = q << r;
+  var t:int = s >> r;
+  var u:ubyte_ptr = f[10]:int;  #u=f[10]=12
+  var v:int = u[2880];          #v=inp[12]
+  var w:int = 24;
+  var x:int = v << w;
+  var y:int = x >> w;
+  var z:ubyte_ptr = f[9]:int;
+  var aa:int = z[2880];       #aa=inp[13]
+  var ba:int = 24;
+  var ca:int = aa << ba;
+  var da:int = ca >> ba;
+  f[2]:int = da;      #f[2]=inp[13]
+  f[1]:int = y;       #f[1]=inp[12]
+  f[0]:int = t;       #f[0]=inp[11]
+  var ea:int = env_emscripten_asm(h, o, f);   #env_emscripten_asm(2521,f+24, [inp[11],inp[12],inp[13]])
+  f[8]:int = ea;
+  var fa:int = f[8]:int;
+  var ga:int = 48;
+  var ha:int = f + ga;
+  g_a = ha;
+  return fa;
+}
+
+function f_i(a:int):int {   #(19)
+  var b:int = g_a;
+  var c:int = 32;
+  var d:int_ptr = b - c;
+  d[6] = a;
+  var e:int = 19;
+  var f:int = d + e;
+  var g:int_ptr@1 = f;
+  var h:int = 4;
+  var i:byte_ptr = g + h;
+  var j:int = 0;
+  var k:int = j[1028]:ubyte;        
+  i[0] = k;
+  var l:int = j[1024]:int@1;
+  g[0] = l;
+  var m:int = 11;
+  var n:int = d + m;
+  var o:long_ptr@1 = n;
+  var p:long_ptr@1 = 0;
+  var lb:long = p[1376];
+  o[0] = lb;
+  var q:int = 0;        #q=0(counter)
+  d[1] = q;             #d[1]=counter
+  loop L_c {
+    var r:int = d[1];   #r=counter
+    var s:int = 8;
+    var t:int = r;
+    var u:int = s;
+    var v:int = t < u;
+    var w:int = 1;
+    var x:int = v & w;        
+    if (eqz(x)) goto B_b;   #if  (counter<8)&1 ==0
+    var y:int = d[6];       #y=d[6]=a=19
+    var z:int = d[1];       #z=d[1]=counter
+    var aa:ubyte_ptr = y + z;#aa= 19 +counter
+    var ba:int = aa[2880];   #ba =inp[19+counter]       
+    var ca:int = 24;
+    var da:int = ba << ca;      
+    var ea:int = da >> ca;   #ea=inp[19+counter]
+    var fa:int = d[1];      #fa=counter
+    var ga:int = 4;
+    var ha:int = fa % ga;   #ha =counter%4
+    var ia:int = 19;
+    var ja:int = d + ia;    #ja=g_a -32 +19
+    var ka:int = ja;
+    var la:ubyte_ptr = ka + ha;  #la=g_a -32 +19 + counter%4
+    var ma:int = la[0];         #ma =la[0]
+    var na:int = 255;
+    var oa:int = ma & na;
+    var pa:int = ea ^ oa;   #pa =inp[19+counter] ^ (ma &255)
+    var qa:int = 1;
+    var ra:int = pa + qa;  #ra = inp[19+counter] ^ (ma &255) +1
+    var sa:int = d[1];
+    var ta:int = 11;
+    var ua:int = d + ta;    
+    var va:int = ua;
+    var wa:ubyte_ptr = va + sa;
+    var xa:int = wa[0];
+    var ya:int = 255;
+    var za:int = xa & ya;     #za=xa &255
+    var ab:int = ra;      #ab= inp[19+counter] ^ (ma &255) +1
+    var bb:int = za;
+    var cb:int = ab != bb;    
+    var db:int = 1;
+    var eb:int = cb & db;
+    if (eqz(eb)) goto B_d;  #if ((inp[19+counter] ^ (ma &255) +1) != xa &255) &1 ==0
+    var fb:int = 0;                 #debug to see the value of ma and xa
+    d[7] = fb;
+    goto B_a;
+
+    label B_d:
+    var gb:int = d[1];
+    var hb:int = 1;
+    var ib:int = gb + hb;     #counter+=1
+    d[1] = ib;
+    continue L_c;
+  }
+  unreachable;
+  label B_b:
+  var jb:int = 1;
+  d[7] = jb;
+  label B_a:
+  var kb:int = d[7];
+  return kb;
+}
+
+export function syscall15(a:int) {   #passcode after checked
+  var b:int = g_a;
+  var c:int = 64;
+  var d:int = b - c;
+  g_a = d;
+  d[15]:int = a;
+  var e:int = d[15]:int;      #e= passcodde
+  if (e) goto B_b;
+  var f:int = 1241;
+  d[14]:int = f;            #1241
+  var g:int = 8;
+  d[13]:int = g;            #8
+  goto B_a;
+
+  label B_b:
+  var h:int = 1230;         
+  d[14]:int = h;            #1230
+  var i:int = 10;           
+  d[13]:int = i;            #10
+
+  label B_a:
+  var j:int = 2656;
+  d[12]:int = j;          #2656
+  var k:int = d[12]:int;
+  var l:int = 105;
+  d[45]:byte = l;         #105
+  var m:int = 105;
+  d[46]:byte = m;         #105
+  var n:int = 0;
+  d[47]:byte = n;          #0
+  var o:int = 45;
+  var p:int = d + o;       #d +45
+  var q:int = p;
+  var r:int = d[14]:int;
+  var s:int = d[13]:int;
+  d[5]:int = s;
+  d[4]:int = r;
+  var t:int = 16;
+  var u:int = d + t;        #d+16
+  env_emscripten_asm(k, q, u);    #env_emscripten_asm(2656,d+45, d+16)
+  var v:int = d[15]:int;        #v=passcode
+  var w:int = 1;
+  var x:int = v;
+  var y:int = w;
+  var z:int = x == y;
+  var aa:int = 1;
+  var ba:int = z & aa;        #(passcode == 1)&1 ==0
+  if (eqz(ba)) goto B_c;
+  var ca:int = 0;
+  d[10]:int = ca;
+  loop L_e {
+    var da:int = d[10]:int;     #da=counter
+    var ea:int = 32;
+    var fa:int = da;
+    var ga:int = ea;
+    var ha:int = fa < ga;       
+    var ia:int = 1;
+    var ja:int = ha & ia;
+    if (eqz(ja)) goto B_d;      #counter<32
+    var ka:ubyte_ptr = d[10]:int;
+    var la:int = ka[2880];      #la= inp[counter]
+    var ma:int = 24;
+    var na:int = la << ma;
+    var oa:int = na >> ma;
+    var pa:int = d[10]:int;     #pa=counter
+    var qa:int = pa[1392]:ubyte;  #[1392][counter] -->maybe need debug
+    var ra:int = 255;
+    var sa:int = qa & ra;         #[1392][counter] &255
+    var ta:int = sa ^ oa;        
+    pa[1392]:byte = ta;         #[1392][counter] ^=inp[counter]
+    var ua:int = d[10]:int;     
+    var va:int = 1;
+    var wa:int = ua + va;    #counter+=1
+    d[10]:int = wa;
+    continue L_e;
+  }
+  unreachable;
+
+  label B_d:
+  var xa:int = 2759;
+  d[9]:int = xa;
+  var ya:int = d[9]:int;
+  var za:int = 105;
+  d[33]:byte = za;
+  var ab:int = 105;
+  d[34]:byte = ab;
+  var bb:int = 0;
+  d[35]:byte = bb;
+  var cb:int = 33;
+  var db:int = d + cb;
+  var eb:int = db;
+  var fb:int = 32;
+  d[1]:int = fb;
+  var gb:int = 1392;
+  d[0]:int = gb;
+  env_emscripten_asm(ya, eb, d);      #env_emscripten_asm(2759, d+33, [1392,32])
+
+  label B_c:
+  var hb:int = 64;
+  var ib:int = d + hb;
+  g_a = ib;
+}
+
+export function syscall12(a:int):int {     #syscall112(passcode)
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  g_a = d;
+  d[2] = a;                             #d[2]=passcode
+  var e:int = 0;
+  d[1] = e;
+  loop L_b {
+    var f:int = d[1];
+    var g:int = 32;
+    var h:int = f;
+    var i:int = g;
+    var j:int = h < i;
+    var k:int = 1;
+    var l:int = j & k;
+    if (eqz(l)) goto B_a;
+    var m:int = d[2];                   #m=passcode
+    var n:int = d[1];                   #n=0
+    var o:ubyte_ptr = m + n;            #o= passcode[0]
+    var p:int = o[0];                   #p= o[0]
+    var q:byte_ptr = d[1];
+    q[2880] = p;                        #q[2880]= p ---> passcode save at address 2880
+    var r:int = d[1];
+    var s:int = 1;
+    var t:int = r + s;
+    d[1] = t;
+    continue L_b;                       #loop to save passcode[i] at [2880]
+  }
+  unreachable;
+  label B_a:
+  var u:ubyte_ptr = 0;
+  var v:int = u[2880];      #take input at inp[0]
+  var w:int = 24;
+  var x:int = v << w;
+  var y:int = x >> w;
+  var z:int = 71;
+  var aa:int = y;           #aa= inp[0]
+  var ba:int = z;           #ba= 71
+  var ca:int = aa != ba;    #ca= inp[0] !=71
+  var da:int = 1;
+  var ea:int = ca & da;     #ea = (inp[0] !=71) &1
+  if (eqz(ea)) goto B_d;    #if ea==0, jmp B_d
+  var fa:int = 0;
+  d[3] = fa;
+  goto B_c;
+
+  label B_d:                #B_d
+  var ga:ubyte_ptr = 0;
+  var ha:int = ga[2881];    #ha =[2881]
+  var ia:int = 24;
+  var ja:int = ha << ia;
+  var ka:int = ja >> ia;
+  var la:int = 70;
+  var ma:int = ka;          #ma= [2881]
+  var na:int = la;          #na=70
+  var oa:int = ma != na;    #oa = [2881] !=70
+  var pa:int = 1;
+  var qa:int = oa & pa;
+  if (eqz(qa)) goto B_e;   #if ([2881] !=70)&1 ==0, jmp B_e
+  var ra:int = 0;
+  d[3] = ra;
+  goto B_c;
+
+  label B_e:               #B_e
+  var sa:ubyte_ptr = 0;
+  var ta:int = sa[2882];   #ta =[2882]
+  var ua:int = 24;
+  var va:int = ta << ua;
+  var wa:int = va >> ua;
+  var xa:int = 36;
+  var ya:int = wa;          #ya= [2882]
+  var za:int = xa;          #za=36
+  var ab:int = ya != za;    
+  var bb:int = 1;
+  var cb:int = ab & bb;
+  if (eqz(cb)) goto B_f;   #if ([2882] !=36)&1 ==0, jmp B_f
+  var db:int = 0;
+  d[3] = db;
+  goto B_c;
+
+  label B_f:               #B_f
+  var eb:ubyte_ptr = 0;
+  var fb:int = eb[2883];
+  var gb:int = 24;
+  var hb:int = fb << gb;
+  var ib:int = hb >> gb;
+  var jb:int = 56;
+  var kb:int = ib;
+  var lb:int = jb;
+  var mb:int = kb != lb;
+  var nb:int = 1;
+  var ob:int = mb & nb;
+  if (eqz(ob)) goto B_g;    #if ([2883] !=56)&1 ==0, jmp B_g
+  var pb:int = 0;
+  d[3] = pb;
+  goto B_c;
+
+  label B_g:                #B_g
+  var qb:ubyte_ptr = 0;
+  var rb:int = qb[2911];
+  var sb:int = 24;
+  var tb:int = rb << sb;
+  var ub:int = tb >> sb;
+  var vb:int = 82;
+  var wb:int = ub;
+  var xb:int = vb;
+  var yb:int = wb != xb;
+  var zb:int = 1;
+  var ac:int = yb & zb;
+  if (eqz(ac)) goto B_h;    #if ([2911] !=82)&1 ==0, jmp B_h
+  var bc:int = 0;
+  d[3] = bc;
+  goto B_c;
+
+  label B_h:                #B_h
+  var cc:ubyte_ptr = 0;
+  var dc:int = cc[2889];
+  var ec:int = 24;
+  var fc:int = dc << ec;
+  var gc:int = fc >> ec;
+  var hc:ubyte_ptr = 0;
+  var ic:int = hc[2907];
+  var jc:int = 24;
+  var kc:int = ic << jc;
+  var lc:int = kc >> jc;
+  var mc:ubyte_ptr = 0;
+  var nc:int = mc[2881];
+  var oc:int = 24;
+  var pc:int = nc << oc;
+  var qc:int = pc >> oc;
+  var rc:int = f_f(gc, lc, qc);     #rc= f_f([2889], [2907], [2881])
+  if (rc) goto B_i;                 #if rc==0 , jmp B_i
+  var sc:int = 0;
+  d[3] = sc;
+  goto B_c;
+
+  label B_i:
+  var tc:ubyte_ptr = 0;
+  var uc:int = tc[2894];  
+  var vc:int = 24;
+  var wc:int = uc << vc;
+  var xc:int = wc >> vc;
+  var yc:ubyte_ptr = 0;
+  var zc:int = yc[2898];
+  var ad:int = 24;
+  var bd:int = zc << ad;
+  var cd:int = bd >> ad;
+  var dd:ubyte_ptr = 0;
+  var ed:int = dd[2911];
+  var fd:int = 24;
+  var gd:int = ed << fd;
+  var hd:int = gd >> fd;
+  var id:int = f_f(xc, cd, hd);       #id = f_f([2894], [2898], [2911])
+  if (id) goto B_j;                   #if id ==0, jmp B_j
+  var jd:int = 0;
+  d[3] = jd;
+  goto B_c;
+
+  label B_j:
+  var kd:ubyte_ptr = 0;
+  var ld:int = kd[2889];
+  var md:int = 24;
+  var nd:int = ld << md;
+  var od:int = nd >> md;
+  var pd:ubyte_ptr = 0;
+  var qd:int = pd[2898];
+  var rd:int = 24;
+  var sd:int = qd << rd;
+  var td:int = sd >> rd;
+  var ud:int = od - td;           #ud= [2889] - [2898]
+  var vd:int = -12;
+  var wd:int = ud;                #wd= ud
+  var xd:int = vd;
+  var yd:int = wd != xd;          #yd = ([2889] - [2898]) !=-12
+  var zd:int = 1;
+  var ae:int = yd & zd;
+  if (eqz(ae)) goto B_k;          #if (([2889] - [2898]) !=-12) &1 ==0, jmp B_k
+  var be:int = 0;
+  d[3] = be;
+  goto B_c;
+  label B_k:
+
+  var ce:ubyte_ptr = 0;
+  var de:int = ce[2907];
+  var ee:int = 24;
+  var fe:int = de << ee;
+  var ge:int = fe >> ee;
+  var he:ubyte_ptr = 0;
+  var ie:int = he[2894];
+  var je:int = 24;
+  var ke:int = ie << je;
+  var le:int = ke >> je;
+  var me:int = ge + le;           #me =[2907] + [2894]
+  var ne:int = 216;
+  var oe:int = me;
+  var pe:int = ne;
+  var qe:int = oe != pe;
+  var re:int = 1;
+  var se:int = qe & re;
+  if (eqz(se)) goto B_l;          #if ([2907] + [2894]!=216)&1 ==0, jmp B_l
+  var te:int = 0;
+  d[3] = te;
+  goto B_c;
+
+  label B_l:
+  var ue:ubyte_ptr = 0;
+  var ve:int = ue[2908];
+  var we:int = 24;
+  var xe:int = ve << we;
+  var ye:int = xe >> we;
+  var ze:int = 5;
+  var af:int = 233;
+  var bf:int = f_e(ye, ze, af);      #bf= f_e([2908], 5, 233)
+  if (bf) goto B_m;
+  var cf:int = 0;
+  d[3] = cf;
+  goto B_c;
+
+  label B_m:
+  var df:ubyte_ptr = 0;
+  var ef:int = df[2895];
+  var ff:int = 24;
+  var gf:int = ef << ff;
+  var hf:int = gf >> ff;
+  var if:int = 3;
+  var jf:int = 178;
+  var kf:int = f_e(hf, if, jf);    #kf= f_e([2895], 3, 178)
+  if (kf) goto B_n;
+  var lf:int = 0;
+  d[3] = lf;
+  goto B_c;
+
+  label B_n:
+  var mf:ubyte_ptr = 0;
+  var nf:int = mf[2890];
+  var of:int = 24;
+  var pf:int = nf << of;
+  var qf:int = pf >> of;
+  var rf:int = 7;
+  var sf:int = 155;
+  var tf:int = f_e(qf, rf, sf);     #f_e([2890], 7, 155)
+  if (tf) goto B_o;
+  var uf:int = 0;
+  d[3] = uf;
+  goto B_c;
+
+  label B_o:
+  var vf:int = 8;
+  var wf:int = 5;
+  var xf:int = f_g(vf, wf);       #f_g(8,5)
+  if (xf) goto B_p;
+  var yf:int = 0;
+  d[3] = yf;
+  goto B_c;
+
+  label B_p:
+  var zf:int = 11;
+  var ag:int = 12;
+  var bg:int = 13;
+  var cg:int = f_h(zf, ag, bg);   #f_h(11,12,13)
+  if (cg) goto B_q;
+  var dg:int = 0;
+  d[3] = dg;
+  goto B_c;
+
+  label B_q:
+  var eg:ubyte_ptr = 0;
+  var fg:int = eg[2896];
+  var gg:int = 24;
+  var hg:int = fg << gg;
+  var ig:int = hg >> gg;
+  var jg:ubyte_ptr = 0;
+  var kg:int = jg[2897];
+  var lg:int = 24;
+  var mg:int = kg << lg;
+  var ng:int = mg >> lg;
+  var og:int = ig & ng;     #[2896] & [2897]
+  var pg:int = 53;
+  var qg:int = og;
+  var rg:int = pg;
+  var sg:int = qg != rg;    #[2896] & [2897] !=53
+  var tg:int = 1;
+  var ug:int = sg & tg;
+  if (eqz(ug)) goto B_r;    #if ([2896] & [2897] !=53)&1 ==0
+  var vg:int = 0;
+  d[3] = vg;
+  goto B_c;
+
+  label B_r:
+  var wg:ubyte_ptr = 0;
+  var xg:int = wg[2897];
+  var yg:int = 24;
+  var zg:int = xg << yg;
+  var ah:int = zg >> yg;
+  var bh:ubyte_ptr = 0;
+  var ch:int = bh[2909];
+  var dh:int = 24;
+  var eh:int = ch << dh;
+  var fh:int = eh >> dh;
+  var gh:int = ah - fh;     #[2897]- [2909]
+  var hh:int = -15;
+  var ih:int = gh;
+  var jh:int = hh;
+  var kh:int = ih != jh;    ##[2897]- [2909] !=-15 
+  var lh:int = 1;
+  var mh:int = kh & lh;
+  if (eqz(mh)) goto B_s;    #if ([2897]- [2909] !=-15)&1 ==0
+  var nh:int = 0;
+  d[3] = nh;
+  goto B_c;
+
+  label B_s:
+  var oh:ubyte_ptr = 0;
+  var ph:int = oh[2909];
+  var qh:int = 24;
+  var rh:int = ph << qh;
+  var sh:int = rh >> qh;
+  var th:ubyte_ptr = 0;
+  var uh:int = th[2910];
+  var vh:int = 24;
+  var wh:int = uh << vh;
+  var xh:int = wh >> vh;
+  var yh:int = sh | xh;
+  var zh:int = 116;
+  var ai:int = yh;
+  var bi:int = zh;
+  var ci:int = ai != bi;      
+  var di:int = 1;
+  var ei:int = ci & di;
+  if (eqz(ei)) goto B_t;      #if ([2909] | [2910] !=116)&1 ==0
+  var fi:int = 0;
+  d[3] = fi;
+  goto B_c;
+
+  label B_t:
+  var gi:ubyte_ptr = 0;
+  var hi:int = gi[2910];
+  var ii:int = 24;
+  var ji:int = hi << ii;
+  var ki:int = ji >> ii;
+  var li:ubyte_ptr = 0;
+  var mi:int = li[2896];
+  var ni:int = 24;
+  var oi:int = mi << ni;
+  var pi:int = oi >> ni;
+  var qi:int = ki + pi;     
+  var ri:int = 107;
+  var si:int = qi;
+  var ti:int = ri;
+  var ui:int = si != ti;
+  var vi:int = 1;
+  var wi:int = ui & vi;
+  if (eqz(wi)) goto B_u;   #if ([2910] + [2896] !=107)&1 ==0
+  var xi:int = 0;
+  d[3] = xi;
+  goto B_c;
+
+  label B_u:
+  var yi:int = 19;
+  var zi:int = f_i(yi);   #f_i(19)
+  if (zi) goto B_v;
+  var aj:int = 0;
+  d[3] = aj;
+  goto B_c;
+
+  label B_v:
+  var bj:int = 1;
+  d[3] = bj;
+  label B_c:
+  var cj:int = d[3];
+  var dj:int = 16;
+  var ej:int = d + dj;
+  g_a = ej;
+  return cj;
+}
+
+function f_l(a:int, b:int, c:int):int {
+  var f:int;
+  var e:int;
+  var e:int;
+  var e:int;
+  var e:int;
+  if (c < 512) goto B_a;
+  env_emscripten_memcpy_big(a, b, c);
+  return a;
+  label B_a:
+  var d:int = a + c;
+  if ((b ^ a) & 3) goto B_c;
+  if (a & 3) goto B_e;
+  c = a;
+  goto B_d;
+  label B_e:
+  if (c >= 1) goto B_f;
+  c = a;
+  goto B_d;
+  label B_f:
+  c = a;
+  loop L_g {
+    c[0]:byte = b[0]:ubyte;
+    b = b + 1;
+    c = c + 1;
+    if (eqz(c & 3)) goto B_d;
+    if (c < d) continue L_g;
+  }
+  label B_d:
+  e = d & -4;
+  if (e < 64) goto B_h;
+  if (c > (f = e + -64)) goto B_h;
+  loop L_i {
+    c[0]:int = b[0]:int;
+    c[1]:int = b[1]:int;
+    c[2]:int = b[2]:int;
+    c[3]:int = b[3]:int;
+    c[4]:int = b[4]:int;
+    c[5]:int = b[5]:int;
+    c[6]:int = b[6]:int;
+    c[7]:int = b[7]:int;
+    c[8]:int = b[8]:int;
+    c[9]:int = b[9]:int;
+    c[10]:int = b[10]:int;
+    c[11]:int = b[11]:int;
+    c[12]:int = b[12]:int;
+    c[13]:int = b[13]:int;
+    c[14]:int = b[14]:int;
+    c[15]:int = b[15]:int;
+    b = b + 64;
+    c = c + 64;
+    if (c <= f) continue L_i;
+  }
+  label B_h:
+  if (c >= e) goto B_b;
+  loop L_j {
+    c[0]:int = b[0]:int;
+    b = b + 4;
+    c = c + 4;
+    if (c < e) continue L_j;
+    goto B_b;
+  }
+  unreachable;
+  label B_c:
+  if (d >= 4) goto B_k;
+  c = a;
+  goto B_b;
+  label B_k:
+  e = d + -4;
+  if (e >= a) goto B_l;
+  c = a;
+  goto B_b;
+  label B_l:
+  c = a;
+  loop L_m {
+    c[0]:byte = b[0]:ubyte;
+    c[1]:byte = b[1]:ubyte;
+    c[2]:byte = b[2]:ubyte;
+    c[3]:byte = b[3]:ubyte;
+    b = b + 4;
+    c = c + 4;
+    if (c <= e) continue L_m;
+  }
+  label B_b:
+  if (c >= d) goto B_n;
+  loop L_o {
+    c[0]:byte = b[0]:ubyte;
+    b = b + 1;
+    c = c + 1;
+    if (c != d) continue L_o;
+  }
+  label B_n:
+  return a;
+}
+
+export function stackSave():int {
+  return g_a
+}
+
+export function stackRestore(a:int) {
+  g_a = a
+}
+
+export function stackAlloc(a:int):int {
+  var b:int = g_a - a & -16;
+  g_a = b;
+  return b;
+}
+
+export function emscripten_stack_init() {
+  g_c = 5245824;
+  g_b = 2932 + 15 & -16;
+}
+
+export function emscripten_stack_get_free():int {
+  return g_a - g_b
+}
+
+export function emscripten_stack_get_end():int {
+  return g_b
+}
+
+function f_s(a:int):int {
+  return 1
+}
+
+function f(a:int) {
+}
+
+function f_u(a:int) {
+}
+
+function f_v(a:int) {
+}
+
+function f_w():int {
+  f_u(2912);
+  return 2920;
+}
+
+function f_x() {
+  f_v(2912)
+}
+
+export function fflush(a:int_ptr):int {
+  var c:int;
+  var b:int;
+  var c:int;
+  if (eqz(a)) goto B_b;
+  if (a[19] > -1) goto B_c;
+  return f_z(a);
+  label B_c:
+  b = f_s(a);
+  c = f_z(a);
+  if (eqz(b)) goto B_a;
+  f(a);
+  return c;
+  label B_b:
+  c = 0;
+  if (eqz(0[731]:int)) goto B_d;
+  c = fflush(0[731]:int);
+  label B_d:
+  a = f_w()[0]:int;
+  if (eqz(a)) goto B_e;
+  loop L_f {
+    b = 0;
+    if (a[19] < 0) goto B_g;
+    b = f_s(a);
+    label B_g:
+    if (a[5] <= a[7]) goto B_h;
+    c = f_z(a) | c;
+    label B_h:
+    if (eqz(b)) goto B_i;
+    f(a);
+    label B_i:
+    a = a[14];
+    if (a) continue L_f;
+  }
+  label B_e:
+  f_x();
+  label B_a:
+  return c;
+}
+
+function f_z(a:int):int {
+  var c:int;
+  if (a[5]:int <= a[7]:int) goto B_a;
+  call_indirect(a, 0, 0, a[9]:int);
+  if (a[5]:int) goto B_a;
+  return -1;
+  label B_a:
+  var b:int = a[1]:int;
+  if (b >= (c = a[2]:int)) goto B_b;
+  call_indirect(a, i64_extend_i32_s(b - c), 1, a[10]:int);
+  label B_b:
+  a[7]:int = 0;
+  a[2]:long = 0L;
+  a[1]:long@4 = 0L;
+  return 0;
+}
+
+export function errno_location():int {
+  return 2928
+}
+

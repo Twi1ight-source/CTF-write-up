@@ -1,0 +1,18 @@
+ 1532: function($0, $1, $2, $3, $4) {
+     var arr = new Uint8Array($4);
+      for (var i = 0; i < $4; i++)
+       { 
+           arr[i] = getValue($3 + i);
+            } 
+       var module = new WebAssembly.Module(arr); 
+       var module_instance = new WebAssembly.Instance(module); 
+       var result = module_instance.exports.f($0, $1); 
+       return (result == $2);},  
+
+
+ 2521: function($0, $1, $2) {
+     var a = String.fromCharCode($0);
+      var b = String.fromCharCode($1);
+       var c = String.fromCharCode($2);
+        return (btoa(a+b+c) == "OU9u");         #btoa():encode to b64
+        },  
