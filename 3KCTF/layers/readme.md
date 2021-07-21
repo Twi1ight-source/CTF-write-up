@@ -1,4 +1,4 @@
-Bài này được obfucated dùng LLVM, mình dùng một tool để deobfucated (https://github.com/mrT4ntr4/MODeflattener) 
+Bài này được obfucated dùng LLVM, mình dùng một tool để deobfucated (https://github.com/mrT4ntr4/MODeflattener) ra được file layers.pacthed
 
 Sau khi deobfucated thì hàm main cơ bản là như vầy:
 
