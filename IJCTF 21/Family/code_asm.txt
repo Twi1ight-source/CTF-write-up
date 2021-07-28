@@ -1,0 +1,76 @@
+.text:0804948F                 push    ebp
+.text:08049490                 mov     ebp, esp
+.text:08049492                 mov     ecx, 0FFFFFFFFh
+.text:08049497                 xor     eax, eax
+.text:08049499                 mov     edi, [ebp+arg_0]
+.text:0804949C                 mov     esi, [ebp+arg_0]
+.text:0804949F                 repne scasb
+.text:080494A1                 not     ecx
+.text:080494A3                 dec     ecx
+.text:080494A4                 sub     ecx, 29h ; ')'
+.text:080494A7                 mov     eax, 1337h
+.text:080494AC                 lea     ebx, loc_8049548
+.text:080494B2                 lea     edx, loc_80494B9
+.text:080494B8                 int     3               ; Trap to Debugger
+.text:080494B9
+.text:080494B9 loc_80494B9:                            ; DATA XREF: sub_804948F+23↑o
+.text:080494B9                                         ; sub_804948F+A8↓o
+.text:080494B9                 mov     eax, 62F1FE94h
+.text:080494BE                 xor     eax, 37A4ABC1h           #eax=1431655765
+.text:080494C3                 int     3                 #v9++
+.text:080494C4                 mov     eax, 0B23A45DDh
+.text:080494C9                 xor     eax, 810976EEh           #v5=858993459
+.text:080494CE                 int     3                 #v4=134520928[v9]
+.text:080494CF                 lodsb                     #load next byte from flag
+.text:080494D0                 mov     bl, al            #ebx=eax (v3[0]=v5)      
+.text:080494D2                 mov     eax, 31711ECh
+.text:080494D7                 xor     eax, 6A7E7885h           #v5= 1768515945
+.text:080494DC                 int     3                 #v5= v3[0] ^ v4  (v5 ^=v4)
+.text:080494DD                 mov     bl, al
+.text:080494DF                 mov     eax, 0F188AEA9h
+.text:080494E4                 xor     eax, 0D3AA8C8Bh          #v5=572662306
+.text:080494E9                 int     3                 #v4= 134520864[v9]
+.text:080494EA                 mov     eax, 576FD59Dh
+.text:080494EF                 xor     eax, 0A79F256Dh          #v5=4042322160
+.text:080494F4                 int     3                 #v5 =v3[0] +v4
+.text:080494F5                 mov     bl, al
+.text:080494F7                 mov     eax, 5E1C6478h
+.text:080494FC                 xor     eax, 4F0D7569h           #v5=286331153
+.text:08049501                 int     3                 #v4= 134520992[v9]
+.text:08049502                 mov     eax, 34C4AAF5h
+.text:08049507                 xor     eax, 0CA3A540Bh          #v5= 4278124286
+.text:0804950C                 int     3                #v5= v3[0]- v4
+.text:0804950D                 mov     bl, al           #bl =v5
+.text:0804950F                 mov     eax, 0C7CD9F18h
+.text:08049514                 xor     eax, 8389DB5Ch           #v5=1145324612
+.text:08049519                 int     3                #v4 =134521056[v9]
+.text:0804951A                 cmp     bl, dl           #cmp bl, v4
+.text:0804951C                 mov     eax, 1337h
+.text:08049521                 lea     ebx, loc_8049548     #v4=edx
+.text:08049527                 lea     edx, loc_804952E     #v3[0]=ebx
+.text:0804952D                 int     3               #if ( bl != dl ) -->fail
+                                                        #else --> goto loc_804952E
+.text:0804952E
+.text:0804952E loc_804952E:                            ; DATA XREF: sub_804948F+98↑o
+.text:0804952E                 inc     ecx              #ecx ++
+.text:0804952F                 cmp     ecx, 29h ; ')'
+.text:08049532                 mov     eax, 1337h
+.text:08049537                 lea     ebx, loc_80494B9
+.text:0804953D                 lea     edx, loc_8049544
+.text:08049543                 int     3               #if len(flag) !=0x29 -->loc_80494B9
+                                                        #else  loc_8049544
+.text:08049544
+.text:08049544 loc_8049544:                            ; DATA XREF: sub_804948F+AE↑o
+.text:08049544                 xor     eax, eax
+.text:08049546                 jmp     short loc_804954D
+.text:08049548 ; ---------------------------------------------------------------------------
+.text:08049548
+.text:08049548 loc_8049548:                            ; DATA XREF: sub_804948F+1D↑o
+.text:08049548                                         ; sub_804948F+92↑o
+.text:08049548                 mov     eax, 0FFFFFFFFh
+.text:0804954D
+.text:0804954D loc_804954D:                            ; CODE XREF: sub_804948F+B7↑j
+.text:0804954D                 mov     esp, ebp
+.text:0804954F                 pop     ebp
+.text:08049550                 retn
+.text:08049550 sub_804948F     endp
