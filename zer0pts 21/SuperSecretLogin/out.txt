@@ -1,0 +1,75 @@
+0x1000: push    ebp
+0x1001: mov     ebp, esp
+0x1003: pushal
+0x1004: xor     eax, eax
+0x1006: sub     esp, 0x100      
+0x100c: mov     byte ptr [esp + eax], al    #esp[eax]=al=eax
+0x100f: inc     eax                         #eax++
+0x1010: cmp     eax, 0x100                  #
+0x1015: jne     0x100c                      #if eax!=256, -->0x100c
+0x1017: xor     esi, esi                    #esi=0
+0x1019: xor     ebx, ebx
+0x101b: movzx   eax, byte ptr [esp + esi]   #eax=esp[esi]
+0x101f: add     ebx, eax                    
+0x1021: mov     eax, esi                    
+0x1023: mov     ecx, 0x2b                   #ecx=43
+0x1028: xor     edx, edx                    #edx=0
+0x102a: div     ecx                         #ecx=%43 (len(inp))
+0x102c: mov     eax, dword ptr [ebp + 0x14] 
+0x102f: movsx   ecx, byte ptr [eax + edx]   
+0x1033: add     ebx, ecx
+0x1035: movzx   ebx, bl                     #ebx=ebx+ecx
+0x1038: mov     cl, byte ptr [esp + esi]    #cl=esp[esi]    |
+0x103b: mov     al, byte ptr [esp + ebx]    #al=esp[ebx]    |
+0x103e: mov     byte ptr [esp + esi], al    #esp[esi]=al    | -->swap(esp[esi], esp[ebx])
+0x1041: mov     byte ptr [esp + ebx], cl    #esp[ebx]=cl    |
+0x1044: add     esi, 1                      #esi+=1
+0x1047: cmp     esi, 0x100
+0x104d: jne     0x101b                      #if esi!=256, -->0x101b
+0x104f: xor     esi, esi
+0x1051: xor     edx, edx
+0x1053: xor     ecx, ecx
+0x1055: inc     edx
+0x1056: inc     esi
+0x1057: movzx   edx, dl
+0x105a: mov     al, byte ptr [esp + edx]
+0x105d: add     ecx, eax
+0x105f: movzx   ecx, cl
+0x1062: mov     bl, byte ptr [esp + ecx]
+0x1065: mov     byte ptr [esp + ecx], al
+0x1068: mov     byte ptr [esp + edx], bl
+0x106b: add     al, bl
+0x106d: movzx   eax, al
+0x1070: mov     edi, dword ptr [ebp + 0xc]
+0x1073: mov     bl, byte ptr [edi + esi - 1]
+0x1077: mov     al, byte ptr [esp + eax]
+0x107a: xor     ebx, eax
+0x107c: mov     edi, dword ptr [ebp + 8]
+0x107f: call    0x1094
+0x1084: cmp     esi, dword ptr [ebp + 0x10]
+0x1087: jne     0x1055
+0x1089: add     esp, 0x100
+0x108f: popal
+0x1090: leave
+0x1091: ret     0x10
+0x1094: push    eax
+0x1095: push    ebx
+0x1096: jmp     0x10b0
+0x1098: pop     eax
+0x1099: shr     ebx, 4
+0x109c: mov     bl, byte ptr [eax + ebx]
+0x109f: mov     byte ptr [edi + esi*2 - 2], bl
+0x10a3: pop     ebx
+0x10a4: and     ebx, 0xf
+0x10a7: mov     bl, byte ptr [eax + ebx]
+0x10aa: mov     byte ptr [edi + esi*2 - 1], bl
+0x10ae: pop     eax
+0x10af: ret
+0x10b0: call    0x1098
+0x10b5: xor     byte ptr [ecx], dh
+0x10b7: xor     dh, byte ptr [ebx]
+0x10b9: xor     al, 0x35
+0x10bb: aaa
+0x10bd: cmp     byte ptr [ecx], bh
+0x10bf: popal
+0x10c0: bound   esp, qword ptr [ebx + 0x64]
