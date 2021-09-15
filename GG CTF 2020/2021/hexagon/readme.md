@@ -9,6 +9,7 @@ Main:
 +Quan trọng là checkflag():
 
 ![Ảnh chụp màn hình 2021-09-15 111747](https://user-images.githubusercontent.com/84214843/133369911-35bd39be-ccb6-488b-9e84-d68fa8f0b33e.png)
+
 ![Ảnh chụp màn hình 2021-09-15 111826](https://user-images.githubusercontent.com/84214843/133369913-a6bf5bf4-7a6a-40e8-a38a-7fdc621d4d1f.png)
 
 +Sau đây là một số instructions của kiến trúc này cần chú ý:
@@ -33,4 +34,24 @@ Main:
 
 ## not(r0) tương đương với: r0 ^0xffffffff
 
+## còn khi xuất hiện hằng số âm , ví dụ như (r5 = ##-0x1644E844) thì đổi lại là: r5=0x100000000 - 0x1644E844
 
++Sau khi biến đổi xong thì check cuối cùng:
+
+![2](https://user-images.githubusercontent.com/84214843/133398805-38fa0ba9-e8db-4e37-ad90-afea11b3f644.png)
+
++Tương tụ như r3:2, chương trình lấy r5:4 = memory tại địa chỉ 0x30515
+
++click vào thì thấy 8 bytes target cần so sánh
+
+![Ảnh chụp màn hình 2021-09-15 153225](https://user-images.githubusercontent.com/84214843/133399200-927e5265-fff0-4c55-9d85-13e17a25ed36.png)
+
++Nhưng thấy rằng cái target này được sử dụng một lần tại start, click lên xem thử:
+
+![image](https://user-images.githubusercontent.com/84214843/133399469-cbfb5f1a-81a4-4b94-b1fe-527212e78aac.png)
+
++Ta thấy rằng nó thực hiện một loop 0x50 lần lấy các giá trị từ r1(target) xor với r0 và r0+1 rồi lưu lại vào memory, tại đây 8 bytes cần so sánh đã thay đổi giá trị
+
++Dựa vào ở trên ta thấy sẽ so sánh r5 với r3 và r2 với r4
+
++Cuối cùng ta viết 1 script sử dụng z3 để tìm r2, r3 ban đầu và gộp lại thành input cần tìm
