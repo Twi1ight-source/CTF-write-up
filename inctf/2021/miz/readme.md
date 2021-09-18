@@ -30,4 +30,9 @@ Hàm sub_9590() check input (tìm mãi mới thấy):
   
   -Còn vị trí bắt đầu là (1,13) (debug mới biết được) và sau khi dump maze ra rồi thì ta suy ra vị trí của 2 là (24,19)
   
-+Tới đây thì mình dùng bfs để giải (script java lụm trên mạng) rồi một script để convert lại thành 4 kí tự (h,j,k,l)
++Tới đây thì mình dùng bfs để giải (script java lụm trên mạng ở đây https://techiedelight.com/compiler/?~lee_algo_print_shortest_path_java) rồi một script để convert lại thành 4 kí tự (h,j,k,l)
+
+Kết quả:
+
+![2](https://user-images.githubusercontent.com/84214843/133883824-1ae7de2e-3f44-421c-8a51-56eb172f0eee.png)
+
