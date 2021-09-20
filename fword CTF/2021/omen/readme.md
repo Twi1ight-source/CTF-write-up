@@ -8,7 +8,8 @@ Cuối cùng mình debug thôi, cho chương trình chạy tại lúc hỏi flag
 
 -Dùng hiển thị trong memory-map thì thấy có 1 section ko có tên với protection và initial đều là EWR--(đây là file cần tìm)
 
-![2](https://user-images.githubusercontent.com/84214843/133976038-e229404d-d268-4222-8fe5-544bdb0f17ae.png)
+![Ảnh chụp màn hình 2021-09-20 154011](https://user-images.githubusercontent.com/84214843/133976199-3e3d667b-0d76-43a5-a3a5-0af97014aa63.png)
+
 
 Tiến hành dump nó ra rồi quăng vào IDA thì thấy có hàm check, dùng z3 để giải
 
