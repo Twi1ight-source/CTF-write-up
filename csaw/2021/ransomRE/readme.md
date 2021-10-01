@@ -18,7 +18,9 @@ Còn hàm encrypt là inkripshun():
 +mà may là chương trình dùng thuật toán aes_128_ctr cũng dễ, cơ bản là:
 
 file1 ^ key = file1_enc
+
 file2 ^ key = file2_enc
+
 -->flag= flag_enc ^ key
 
 +vì thế chỉ cần tìm được key thì chỉ cần xor với key sẽ có flag, tìm key bằng cách xor file còn lại với enc của nó
