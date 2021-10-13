@@ -1,0 +1,170 @@
+	  0 LOAD_FAST                0 (0)
+          2 LOAD_METHOD              0 (0)
+          4 CALL_METHOD              0    
+          6 STORE_FAST               1 (1)
+          8 BUILD_LIST               0    
+         10 STORE_FAST               2 (2)
+         12 LOAD_CONST               1 (1)
+         14 STORE_FAST               3 (3)
+    >>   16 LOAD_FAST                3 (3)
+         18 LOAD_FAST                1 (1)
+         20 COMPARE_OP               0 (<)
+         22 POP_JUMP_IF_FALSE      118    
+         24 LOAD_CONST               2 (2)
+         26 UNPACK_SEQUENCE          2
+         28 STORE_FAST               4 (4)
+         30 STORE_FAST               5 (5)
+    >>   32 LOAD_FAST                5 (5)
+         34 LOAD_FAST                1 (1)
+         36 COMPARE_OP               0 (<)
+         38 POP_JUMP_IF_FALSE       78
+         40 LOAD_FAST                4 (4)
+         42 LOAD_FAST                5 (5)
+         44 LOAD_CONST               3 (3)
+         46 BINARY_ADD
+         48 LOAD_FAST                0 (0)
+         50 LOAD_FAST                3 (3)
+         52 LOAD_FAST                5 (5)
+         54 BINARY_ADD
+         56 LOAD_FAST                1 (1)
+         58 BINARY_MODULO
+         60 BINARY_SUBSCR
+         62 BINARY_MULTIPLY
+         64 INPLACE_ADD
+         66 STORE_FAST               4 (4)
+         68 LOAD_FAST                5 (5)
+         70 LOAD_CONST               3 (3)
+         72 INPLACE_ADD
+         74 STORE_FAST               5 (5)
+         76 JUMP_ABSOLUTE           32
+    >>   78 LOAD_FAST                4 (4)
+         80 LOAD_CONST               4 (4)
+         82 INPLACE_MODULO
+         84 STORE_FAST               4 (4)
+         86 LOAD_FAST                4 (4)
+         88 LOAD_CONST               5 (5)
+         90 COMPARE_OP               0 (<)
+         92 POP_JUMP_IF_TRUE        98
+         94 LOAD_ASSERTION_ERROR
+         96 RAISE_VARARGS            1
+    >>   98 LOAD_FAST                2 (2)
+        100 LOAD_METHOD              1 (1)
+        102 LOAD_FAST                4 (4)
+        104 CALL_METHOD              1
+        106 POP_TOP
+        108 LOAD_FAST                3 (3)
+        110 LOAD_CONST               3 (3)
+        112 INPLACE_ADD
+        114 STORE_FAST               3 (3)
+        116 JUMP_ABSOLUTE           16
+    >>  118 LOAD_FAST                2 (2)
+        120 RETURN_VALUE
+
+-----------------------------------------------------------------------------------------------------
+ 	  0 LOAD_CONST               1 (1)
+          2 STORE_FAST               2 (2)
+    >>    4 SETUP_FINALLY           66 (to 72)
+          6 LOAD_FAST                0 (0)
+          8 UNPACK_SEQUENCE          2
+         10 STORE_FAST               3 (3)
+         12 STORE_FAST               4 (4)
+         14 LOAD_FAST                1 (1)
+         16 LOAD_CONST               2 (2)
+         18 BINARY_MODULO
+         20 LOAD_FAST                2 (2)
+         22 COMPARE_OP               2 (==)
+         24 POP_JUMP_IF_FALSE       48
+         26 LOAD_FAST                4 (4)
+         28 STORE_FAST               0 (0)
+         30 LOAD_FAST                1 (1)
+         32 LOAD_CONST               2 (2)
+         34 INPLACE_FLOOR_DIVIDE
+         36 STORE_FAST               1 (1)
+         38 LOAD_CONST               3 (3)
+         40 LOAD_FAST                2 (2)
+         42 BINARY_SUBTRACT
+         44 STORE_FAST               2 (2)
+         46 JUMP_FORWARD            20 (to 68)
+    >>   48 LOAD_FAST                3 (3)
+         50 STORE_FAST               0 (0)
+         52 LOAD_FAST                1 (1)
+         54 LOAD_CONST               2 (2)
+         56 INPLACE_FLOOR_DIVIDE
+         58 STORE_FAST               1 (1)
+         60 LOAD_CONST               3 (3)
+         62 LOAD_FAST                2 (2)
+         64 BINARY_SUBTRACT
+         66 STORE_FAST               2 (2)
+    >>   68 POP_BLOCK
+         70 JUMP_ABSOLUTE            4
+    >>   72 POP_TOP
+         74 POP_TOP
+         76 POP_TOP
+         78 LOAD_FAST                0 (0)
+         80 LOAD_CONST               1 (1)
+         82 BINARY_SUBSCR
+         84 ROT_FOUR
+         86 POP_EXCEPT
+         88 RETURN_VALUE
+         90 RERAISE
+         92 JUMP_ABSOLUTE            4
+         94 LOAD_CONST               0 (0)
+         96 RETURN_VALUE
+
+
+
+
+def mix(a):
+    ln= a.__len__()
+    arr=[]
+    i=0
+    while i <ln:
+        s,j=0,0
+        while j < ln:
+            s+=(j+1) * a[(i+j) %ln]
+            j+=1
+        s%= 257
+        arr.append(s)
+        i+=1
+    return arr
+
+def search(a,b):
+    c=0
+    while True:
+        try:
+            a0,a1=a
+            if c==b%2:
+                a=a1
+                b=b//2
+                c=1-c
+            else:
+                a=a0
+                b=b//2
+                c=1-c
+        except:
+            return a[0]
+
+
+ror = lambda val, r_bits, max_bits: \
+    ((val & (2**max_bits-1)) >> r_bits%max_bits) | \
+    (val << (max_bits-(r_bits%max_bits)) & (2**max_bits-1))
+
+print (hex(ror(0x42, 4, 32)))
+inp=b'Anthony Bailey'
+def enc_2(a1):
+    i=0
+    v7=0
+    while i<len(a1):
+        v7=ror(a1[i]+v7,4,32)
+        i+=1
+    return hex(v7)
+def enc_1(a1):
+    v2=len(a1)
+    res=0
+    i=0
+    while i<v2:
+        v5=a1[i] + res
+        i+=1
+        res=(ror(v5,12,32) ^0x55AA)
+    return hex(res)
+print(f'{enc_2(inp)[2:]}-{enc_1(inp)[2:]}'.upper())

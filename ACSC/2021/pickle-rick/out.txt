@@ -1,0 +1,1119 @@
+    0: c    GLOBAL     'builtins print'
+   16: T    BINSTRING  '\n                                                                                     `.inWWx*.                   \n                                                                                  `izW@MxnnnxMn;                 \n                                                                                `*WWxnnnnnnnnnnxx*`              \n                                                                               :MWnnnznnnnnnnnnnnxxi`            \n                                                                             `#@xnn#***+#+nnnnnnnnnxn,           \n                                                                            ,MWnnnn******+nnnnnnnnnnnx+          \n                                                                           :WMnnnn+*****znnnnnnnnnnnnnnn.        \n                                                                          ;@xnnnz+***+#znnnzznnnnnnnnnnnx,       \n                                                                         :@xnnnnz+*+znnnzzzzzzzznnnnnnnnnx:      \n                                                                        ,WMnnnnnnnMMxxMxnzzzzzzznnnnnnnnnnx,     \n                                                                       `MMnnnnnnnM*,,,,:*nMnzzzzznnnnnnnnnnx.    \n                                                                       zWnnnnnnnM:,,,,,,,,:+Mnzzzznnnnnnnnnnz    \n                                                                      i@nnnnnnnnxxxMMxxz+:,,,zxzzznnnnnnnnnnni   \n                                                                     .Wxnnnnnnnnzz#zz#zznMxi,,*Mzznnnnnnnnnnnx`  \n                                                                     zWnnnnnnnnzzzzzzzzzzzzxn:,iMzznnnnnnnnnnn+  \n                                                                    ;@nnnnnnnnzzzzzzzzzzzzzzzM;,ixznnnnnnnnnnnx` \n                                                                   `MMnnnnnxMMMnzzzzzzzzzzzzzzM:,#nnnnnnnnnnnnni \n                                                                   *@nnnnnM#,..ixxzzzzzzzzzzzzzx,,xznnnnnnnnnnn# \n                                                                  `WxnnnnM:``````iMzzzzzzzzzzzzx*,*xnnnnnnnnnnnx`\n                                                                  +WnnnnM:.`````.`,xzzzzzzzzzzzzx,,Mnnnnnnnnnnnx.\n                                                                 .@xnnnx*.````````.,Mzzzzzzzzzzzx*,xnnnnnnnnnnnx;\n                                                                 #WnnnnM.```..``````*nzzzzzzzzzzzM:xnnnnnnnnnnnn*\n                                                                ,@nnnnnn````zn`````.,Mzz#zzzzzzzzzxxnnnnnnnnnnnn+\n                                                                zMnnnnnz````.,``````.MzMxnnxMnzzzzznnnnnnnnnnnnnz\n                                                               ,@nnnnnnz````````````,W#.````.ixnzzznnnnnnnnnnnnnn\n                                                               nMnnnnnnx```````````.*+````````.#xzznnnnnnnnnnnnnz\n                                                              :@nnnnnnzM.``````````.x`````````.`nzznnnnnnnnnnnnnn\n                                                             `MxnnnnnzMn#`.````````#;```````````,Mnnnnnnnnnnnnnnn\n                                                             *Wnnnnnzzxnx+.``````.*W`.```````````xnnnnnnnnnnnnnnz\n                                                            .WxnnnnzzzzM#xn,````.#xn`.````##`````znnnnnnnnnnnnnnn\n                                                            zMnnnxMMMxznxzzMxz#zxnzz`.````z+`````#nnnnnnnnnnnnnnn\n                                                           :@nnnMMzzznMxnMnzzzMnzzzx`.```````````nnnnnnnnnnnnnnn#\n                                                          `MxnnMxzxWWMznMzxxzxxzzzzM,```````````.Mnnnnnnnnnnnnnn+\n                                                          +WnnxMzW@@@@WzzzzzzMzzzzzzn..```````..+xnnnnnnnnnnnnnx;\n                                                         .@xnnWnM@@@@@:xzzzzMzzzzx#zn#`.```````:MnnnnnnnnnnnnnnM.\n                                                         zMnnnWz@@@@@@W@MzzzMzzzMnzzzxz.``````:Mnnnnnnnnnnnnnnnx \n                                                        :@nnnnWz@@@@@@@#,MzzxznMzzzz#zzM#;..:zMnnnnnnnnnnnnnnnnz \n                                                       `MxnnnnMz@@@@@@@z:nMzMMxzzzzzxnz#zxMMMnnnnnnnnnnnnnnnnnxi \n                                                       iWnnnnnWz@@@@@@@@@x;MzzzzzzzzzxxzzzzznnnnnnnnnnnnnnnnnnM, \n                                                      .WxnnnnnMzW@@@@@@@@;`+MnzzzzzzzznWxnnxWnnnnnnnnnnnnnnnnnM  \n                                                      #Mnnnnnnxnx@@@@@@@@z+W.zM#xMMxzzzznxxnnnnnnnnnnnnnnnnnnn#  \n                                                     ,@nnnnnnnzMz@@@@@@@@@@M:Mn`n#`n@xnzzzzznnnnnnnnnnnnnnnnnM:  \n                                                     nMnnnnnnzzxnM#@@@@@@@@@@@@n@@n@@z@WzzxnnnnnnnnnnnnnnnnnnM`  \n                                                    :@nnnnnnnzzzMzzz@@@@@@@@@@@@@@@@@@@@@nzWnnnnnnnnnnnnnnnnnz   \n                                                   `MxnznnnnnzzznMxMzx@@@@@@@@@@@@@@@@@@@@nMxnnnnnnnnnnnnnnnM;   \n                                                   iWzxMMnnnnzzzznxM:zWM@@@@@@WnnxW@@@@@@@WnMnnnnnnnnnnnnnnnM`   \n                                                  `WnxMMxnnnnzzzzzxxxM,:@@@@@@@WnnnM@@@@@@@nWnnnnnnnnnnnnnnnz    \n                                                  +WzMMMnnnnnzzzzzzxnxz;@*M@@@@@@xnnM@@@@@@nWnnnnnnnnnnnnnnM;    \n                                                 .WnzxMxnnnnnzzzzzzzzzzW#`#@@@@@@@nnn@@@@@@nWnnnnnnnnnnnnnnM     \n                                                 #MnnnMnnnnnzzzzzzzzzzzzx#n+,@@@@@xnn@@@@@WnMnnnnnnnnnnnnnx+     \n                                                .@nnnnnnnnnnzzzzzzzzzzzzzzM*`@+.@@WnnW@@@@xMxnnnnnnnnnnnnnW,     \n                                                zMnnnnnnnnnnzzzzzzzzzzzzzzznMW,`x:MnnW@@@MnWnnnnnnnnnnnnnnx      \n                                               ,@nnnnnnnnnnnzzzzzzzzzzzzzzzzzzMxM*xMM@@WxnWnnnnnnnnnnnnnnM*      \n                                               nMnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnMxxnnMWnnnnnnnnnnnnnnnM`      \n                                              :@nnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzzzxMMMWWxnnnnnnnnnnnnnnnx#       \n                                             `xxnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzzznxxxnnnnnnnnnnnnnnnnnnW.       \n                                             ;@nnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxz        \n                                             MxnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnM,        \n                                            iWnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnn         \n                                           `WnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnM;         \n                                           *MnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnM          \n                                          .Wnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnx*          \n                                          #MnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnW.          \n                                         ,@nnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnx#           \n                                         nxnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnM,           \n                                        ;Wnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnx            \n                                       `MnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnMi            \n                                       +MnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnM`            \n                                      ,Wnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnx*             \n                                     `xxnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnW`             \n                                     *Mnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnx+              \n                                    .WnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnW.              \n                                    xxnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnx+               \n                                   *MnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`               \n                                  ,Wnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx+                \n                                 `xxnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW`                \n                                 +Mnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx#                 \n                                :WnznnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM.                 \n                               `MnnxMxnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnz                  \n                               #xnzMMxnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM:                  \n                              ;WnnzxMnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx                   \n                             .Wnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnxnnnnnnnnnxi                   \n                            `xxnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxMnnnnnnnnnx`                   \n                            +MnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxMMnnnnnnnnx*                    \n                           :WnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnMMMnnnnnnnnM`                    \n                          .MnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxMMMznnnnnnx#                     \n                         `xnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnznnnnnnnM.                     \n                         #xnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx#                      \n                        *MnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                      \n                       ;MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM#                       \n                      ,MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW`                       \n                     ,MnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMi                        \n                    .xnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx                         \n                   .xnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW:                         \n                  .xnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxz                          \n                 `nnnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                          \n                 nxnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM*                           \n                #xnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`                           \n               *MnnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW;                            \n              :Wnnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxn                             \n             .MnnnnnnnnnnnnzznnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW,                             \n            `xxnnnnnnnnnnnzxxxzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx#                              \n            #MnnnnnnnnnnnzxMMMzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`                              \n           ;WnnnnnnnnnnnnzMMMnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM;                               \n          .MnnzznnnnnnnnnzxMnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxn                                \n          nxzxMMnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                                \n         *MzxMMMxnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM+                                 \n        ,WnzMMMMnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`                                 \n       `xnnzxMMxnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW;                                  \n       +Mnnnzxxnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxn                                   \n      ,WnnnnnznnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                                   \n     `xxnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMi                                    \n     iMnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxx                                     \n    `MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                                     \n    *MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnWi                                      \n   `WnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW#                                       \n   iMnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMn`                                       \n   MnnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMM`                                        \n  :WnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxW.                                         \n  zxnnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxW,                                          \n `Wnnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@:                                           \n :WnnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW;                                            \n +MnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW*                                             \n xxnnnnnnnnnnnnzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnW*                                              \n`WnnnnnnnnnnnnnzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnMMMnnnnnnnnnnnnnW#                                               \n,@nnnnnnnnnnnnnzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnMMMMxnnnnnnnnnnnMz`                                               \n:WnnnnnnnnnnnnnzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnxMMMMnnnnnnnnnnnMn                                                 \n*MnnnnnnnnnnnnnnzzzzzzznnnnnnnnnnnnnnnnnnnnnnnxMMMMznnnnnnnnnMx`                                                 \n+Mnnnnnnnnnnnnnnnzzznnnnnnnnnnnnnnnnnnnnnnnnnnzxxxznnnnnnnnnxx`                                                  \nzMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnznnnnnnnnnnxM`                                                   \nzxnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                    \n#xnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                     \n#MnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                      \n#MnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                       \niMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                        \n;WnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                         \n.@nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                          \n MxnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                           \n *MnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMx`                                                            \n .WnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMn`                                                             \n  *WnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW#`                                                              \n  `nMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW*                                                                \n   `xMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMM:                                                                 \n    `zWnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxWz.                                                     `            \n      *Wxnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx@x;                                                      `.            \n       .#WxnnnnnnnnnnnnnnnnnnnnnnnnnnnnM@x:`                                                                     \n         .#WMnnnnnnnnnnnnnnnnnnnnnnnxWW#,                                                                        \n           `ixWMxnnnnnnnnnnnnnnnnxW@ni`                                                                          \n              .izMWWMxxxxxxxMMW@M#;`                                                                             \n                 `.;+#nxxxzz+*;.`                                        http://www.asciify.net/ascii/ascii/11190\n'
+17122: \x85 TUPLE1
+17123: R    REDUCE
+17124: c    GLOBAL     'builtins print'
+17140: S    STRING     'Pickle Rick says:'
+17161: \x85 TUPLE1
+17162: R    REDUCE
+17163: c    GLOBAL     'builtins print'
+17179: c    GLOBAL     '__main__ rick_says'
+17199: \x85 TUPLE1
+17200: R    REDUCE
+17201: c    GLOBAL     'builtins print'
+17217: S    STRING     'The flag machine says:'
+17243: \x85 TUPLE1
+17244: R    REDUCE
+17245: J    BININT     115
+17250: \x85 TUPLE1
+17251: J    BININT     99
+17256: \x85 TUPLE1
+17257: \x86 TUPLE2
+17258: J    BININT     97
+17263: \x85 TUPLE1
+17264: J    BININT     162
+17269: \x85 TUPLE1
+17270: \x86 TUPLE2
+17271: \x86 TUPLE2
+17272: J    BININT     81
+17277: \x85 TUPLE1
+17278: J    BININT     225
+17283: \x85 TUPLE1
+17284: \x86 TUPLE2
+17285: J    BININT     215
+17290: \x85 TUPLE1
+17291: J    BININT     72
+17296: \x85 TUPLE1
+17297: \x86 TUPLE2
+17298: \x86 TUPLE2
+17299: \x86 TUPLE2
+17300: J    BININT     111
+17305: \x85 TUPLE1
+17306: J    BININT     229
+17311: \x85 TUPLE1
+17312: \x86 TUPLE2
+17313: J    BININT     64
+17318: \x85 TUPLE1
+17319: J    BININT     155
+17324: \x85 TUPLE1
+17325: \x86 TUPLE2
+17326: \x86 TUPLE2
+17327: J    BININT     212
+17332: \x85 TUPLE1
+17333: J    BININT     66
+17338: \x85 TUPLE1
+17339: \x86 TUPLE2
+17340: J    BININT     95
+17345: \x85 TUPLE1
+17346: J    BININT     200
+17351: \x85 TUPLE1
+17352: \x86 TUPLE2
+17353: \x86 TUPLE2
+17354: \x86 TUPLE2
+17355: \x86 TUPLE2
+17356: J    BININT     177
+17361: \x85 TUPLE1
+17362: J    BININT     45
+17367: \x85 TUPLE1
+17368: \x86 TUPLE2
+17369: J    BININT     206
+17374: \x85 TUPLE1
+17375: J    BININT     18
+17380: \x85 TUPLE1
+17381: \x86 TUPLE2
+17382: \x86 TUPLE2
+17383: J    BININT     140
+17388: \x85 TUPLE1
+17389: J    BININT     47
+17394: \x85 TUPLE1
+17395: \x86 TUPLE2
+17396: J    BININT     122
+17401: \x85 TUPLE1
+17402: J    BININT     19
+17407: \x85 TUPLE1
+17408: \x86 TUPLE2
+17409: \x86 TUPLE2
+17410: \x86 TUPLE2
+17411: J    BININT     186
+17416: \x85 TUPLE1
+17417: J    BININT     123
+17422: \x85 TUPLE1
+17423: \x86 TUPLE2
+17424: J    BININT     91
+17429: \x85 TUPLE1
+17430: J    BININT     94
+17435: \x85 TUPLE1
+17436: \x86 TUPLE2
+17437: \x86 TUPLE2
+17438: J    BININT     26
+17443: \x85 TUPLE1
+17444: J    BININT     104
+17449: \x85 TUPLE1
+17450: \x86 TUPLE2
+17451: J    BININT     119
+17456: \x85 TUPLE1
+17457: J    BININT     88
+17462: \x85 TUPLE1
+17463: \x86 TUPLE2
+17464: \x86 TUPLE2
+17465: \x86 TUPLE2
+17466: \x86 TUPLE2
+17467: \x86 TUPLE2
+17468: J    BININT     44
+17473: \x85 TUPLE1
+17474: J    BININT     82
+17479: \x85 TUPLE1
+17480: \x86 TUPLE2
+17481: J    BININT     58
+17486: \x85 TUPLE1
+17487: J    BININT     139
+17492: \x85 TUPLE1
+17493: \x86 TUPLE2
+17494: \x86 TUPLE2
+17495: J    BININT     193
+17500: \x85 TUPLE1
+17501: J    BININT     101
+17506: \x85 TUPLE1
+17507: \x86 TUPLE2
+17508: J    BININT     209
+17513: \x85 TUPLE1
+17514: J    BININT     213
+17519: \x85 TUPLE1
+17520: \x86 TUPLE2
+17521: \x86 TUPLE2
+17522: \x86 TUPLE2
+17523: J    BININT     65
+17528: \x85 TUPLE1
+17529: J    BININT     16
+17534: \x85 TUPLE1
+17535: \x86 TUPLE2
+17536: J    BININT     164
+17541: \x85 TUPLE1
+17542: J    BININT     124
+17547: \x85 TUPLE1
+17548: \x86 TUPLE2
+17549: \x86 TUPLE2
+17550: J    BININT     150
+17555: \x85 TUPLE1
+17556: J    BININT     149
+17561: \x85 TUPLE1
+17562: \x86 TUPLE2
+17563: J    BININT     132
+17568: \x85 TUPLE1
+17569: J    BININT     1
+17574: \x85 TUPLE1
+17575: \x86 TUPLE2
+17576: \x86 TUPLE2
+17577: \x86 TUPLE2
+17578: \x86 TUPLE2
+17579: J    BININT     79
+17584: \x85 TUPLE1
+17585: J    BININT     236
+17590: \x85 TUPLE1
+17591: \x86 TUPLE2
+17592: J    BININT     131
+17597: \x85 TUPLE1
+17598: J    BININT     196
+17603: \x85 TUPLE1
+17604: \x86 TUPLE2
+17605: \x86 TUPLE2
+17606: J    BININT     113
+17611: \x85 TUPLE1
+17612: J    BININT     194
+17617: \x85 TUPLE1
+17618: \x86 TUPLE2
+17619: J    BININT     185
+17624: \x85 TUPLE1
+17625: J    BININT     4
+17630: \x85 TUPLE1
+17631: \x86 TUPLE2
+17632: \x86 TUPLE2
+17633: \x86 TUPLE2
+17634: J    BININT     107
+17639: \x85 TUPLE1
+17640: J    BININT     36
+17645: \x85 TUPLE1
+17646: \x86 TUPLE2
+17647: J    BININT     181
+17652: \x85 TUPLE1
+17653: J    BININT     218
+17658: \x85 TUPLE1
+17659: \x86 TUPLE2
+17660: \x86 TUPLE2
+17661: J    BININT     120
+17666: \x85 TUPLE1
+17667: J    BININT     40
+17672: \x85 TUPLE1
+17673: \x86 TUPLE2
+17674: J    BININT     142
+17679: \x85 TUPLE1
+17680: J    BININT     11
+17685: \x85 TUPLE1
+17686: \x86 TUPLE2
+17687: \x86 TUPLE2
+17688: \x86 TUPLE2
+17689: \x86 TUPLE2
+17690: \x86 TUPLE2
+17691: \x86 TUPLE2
+17692: J    BININT     183
+17697: \x85 TUPLE1
+17698: J    BININT     129
+17703: \x85 TUPLE1
+17704: \x86 TUPLE2
+17705: J    BININT     51
+17710: \x85 TUPLE1
+17711: J    BININT     125
+17716: \x85 TUPLE1
+17717: \x86 TUPLE2
+17718: \x86 TUPLE2
+17719: J    BININT     6
+17724: \x85 TUPLE1
+17725: J    BININT     222
+17730: \x85 TUPLE1
+17731: \x86 TUPLE2
+17732: J    BININT     13
+17737: \x85 TUPLE1
+17738: J    BININT     161
+17743: \x85 TUPLE1
+17744: \x86 TUPLE2
+17745: \x86 TUPLE2
+17746: \x86 TUPLE2
+17747: J    BININT     141
+17752: \x85 TUPLE1
+17753: J    BININT     109
+17758: \x85 TUPLE1
+17759: \x86 TUPLE2
+17760: J    BININT     100
+17765: \x85 TUPLE1
+17766: J    BININT     175
+17771: \x85 TUPLE1
+17772: \x86 TUPLE2
+17773: \x86 TUPLE2
+17774: J    BININT     153
+17779: \x85 TUPLE1
+17780: J    BININT     252
+17785: \x85 TUPLE1
+17786: \x86 TUPLE2
+17787: J    BININT     117
+17792: \x85 TUPLE1
+17793: J    BININT     127
+17798: \x85 TUPLE1
+17799: \x86 TUPLE2
+17800: \x86 TUPLE2
+17801: \x86 TUPLE2
+17802: \x86 TUPLE2
+17803: J    BININT     54
+17808: \x85 TUPLE1
+17809: J    BININT     156
+17814: \x85 TUPLE1
+17815: \x86 TUPLE2
+17816: J    BININT     62
+17821: \x85 TUPLE1
+17822: J    BININT     167
+17827: \x85 TUPLE1
+17828: \x86 TUPLE2
+17829: \x86 TUPLE2
+17830: J    BININT     160
+17835: \x85 TUPLE1
+17836: J    BININT     198
+17841: \x85 TUPLE1
+17842: \x86 TUPLE2
+17843: J    BININT     152
+17848: \x85 TUPLE1
+17849: J    BININT     211
+17854: \x85 TUPLE1
+17855: \x86 TUPLE2
+17856: \x86 TUPLE2
+17857: \x86 TUPLE2
+17858: J    BININT     178
+17863: \x85 TUPLE1
+17864: J    BININT     21
+17869: \x85 TUPLE1
+17870: \x86 TUPLE2
+17871: J    BININT     73
+17876: \x85 TUPLE1
+17877: J    BININT     214
+17882: \x85 TUPLE1
+17883: \x86 TUPLE2
+17884: \x86 TUPLE2
+17885: J    BININT     253
+17890: \x85 TUPLE1
+17891: J    BININT     135
+17896: \x85 TUPLE1
+17897: \x86 TUPLE2
+17898: J    BININT     105
+17903: \x85 TUPLE1
+17904: J    BININT     190
+17909: \x85 TUPLE1
+17910: \x86 TUPLE2
+17911: \x86 TUPLE2
+17912: \x86 TUPLE2
+17913: \x86 TUPLE2
+17914: \x86 TUPLE2
+17915: J    BININT     85
+17920: \x85 TUPLE1
+17921: J    BININT     12
+17926: \x85 TUPLE1
+17927: \x86 TUPLE2
+17928: J    BININT     243
+17933: \x85 TUPLE1
+17934: J    BININT     34
+17939: \x85 TUPLE1
+17940: \x86 TUPLE2
+17941: \x86 TUPLE2
+17942: J    BININT     137
+17947: \x85 TUPLE1
+17948: J    BININT     233
+17953: \x85 TUPLE1
+17954: \x86 TUPLE2
+17955: J    BININT     128
+17960: \x85 TUPLE1
+17961: J    BININT     228
+17966: \x85 TUPLE1
+17967: \x86 TUPLE2
+17968: \x86 TUPLE2
+17969: \x86 TUPLE2
+17970: J    BININT     151
+17975: \x85 TUPLE1
+17976: J    BININT     8
+17981: \x85 TUPLE1
+17982: \x86 TUPLE2
+17983: J    BININT     247
+17988: \x85 TUPLE1
+17989: J    BININT     92
+17994: \x85 TUPLE1
+17995: \x86 TUPLE2
+17996: \x86 TUPLE2
+17997: J    BININT     60
+18002: \x85 TUPLE1
+18003: J    BININT     174
+18008: \x85 TUPLE1
+18009: \x86 TUPLE2
+18010: J    BININT     138
+18015: \x85 TUPLE1
+18016: J    BININT     114
+18021: \x85 TUPLE1
+18022: \x86 TUPLE2
+18023: \x86 TUPLE2
+18024: \x86 TUPLE2
+18025: \x86 TUPLE2
+18026: J    BININT     130
+18031: \x85 TUPLE1
+18032: J    BININT     169
+18037: \x85 TUPLE1
+18038: \x86 TUPLE2
+18039: J    BININT     15
+18044: \x85 TUPLE1
+18045: J    BININT     103
+18050: \x85 TUPLE1
+18051: \x86 TUPLE2
+18052: \x86 TUPLE2
+18053: J    BININT     230
+18058: \x85 TUPLE1
+18059: J    BININT     106
+18064: \x85 TUPLE1
+18065: \x86 TUPLE2
+18066: J    BININT     158
+18071: \x85 TUPLE1
+18072: J    BININT     57
+18077: \x85 TUPLE1
+18078: \x86 TUPLE2
+18079: \x86 TUPLE2
+18080: \x86 TUPLE2
+18081: J    BININT     76
+18086: \x85 TUPLE1
+18087: J    BININT     5
+18092: \x85 TUPLE1
+18093: \x86 TUPLE2
+18094: J    BININT     84
+18099: \x85 TUPLE1
+18100: J    BININT     210
+18105: \x85 TUPLE1
+18106: \x86 TUPLE2
+18107: \x86 TUPLE2
+18108: J    BININT     32
+18113: \x85 TUPLE1
+18114: J    BININT     39
+18119: \x85 TUPLE1
+18120: \x86 TUPLE2
+18121: J    BININT     165
+18126: \x85 TUPLE1
+18127: J    BININT     87
+18132: \x85 TUPLE1
+18133: \x86 TUPLE2
+18134: \x86 TUPLE2
+18135: \x86 TUPLE2
+18136: \x86 TUPLE2
+18137: \x86 TUPLE2
+18138: \x86 TUPLE2
+18139: \x86 TUPLE2
+18140: J    BININT     184
+18145: \x85 TUPLE1
+18146: J    BININT     237
+18151: \x85 TUPLE1
+18152: \x86 TUPLE2
+18153: J    BININT     28
+18158: \x85 TUPLE1
+18159: J    BININT     207
+18164: \x85 TUPLE1
+18165: \x86 TUPLE2
+18166: \x86 TUPLE2
+18167: J    BININT     75
+18172: \x85 TUPLE1
+18173: J    BININT     172
+18178: \x85 TUPLE1
+18179: \x86 TUPLE2
+18180: J    BININT     176
+18185: \x85 TUPLE1
+18186: J    BININT     231
+18191: \x85 TUPLE1
+18192: \x86 TUPLE2
+18193: \x86 TUPLE2
+18194: \x86 TUPLE2
+18195: J    BININT     37
+18200: \x85 TUPLE1
+18201: J    BININT     195
+18206: \x85 TUPLE1
+18207: \x86 TUPLE2
+18208: J    BININT     232
+18213: \x85 TUPLE1
+18214: J    BININT     182
+18219: \x85 TUPLE1
+18220: \x86 TUPLE2
+18221: \x86 TUPLE2
+18222: J    BININT     25
+18227: \x85 TUPLE1
+18228: J    BININT     201
+18233: \x85 TUPLE1
+18234: \x86 TUPLE2
+18235: J    BININT     188
+18240: \x85 TUPLE1
+18241: J    BININT     61
+18246: \x85 TUPLE1
+18247: \x86 TUPLE2
+18248: \x86 TUPLE2
+18249: \x86 TUPLE2
+18250: \x86 TUPLE2
+18251: J    BININT     163
+18256: \x85 TUPLE1
+18257: J    BININT     251
+18262: \x85 TUPLE1
+18263: \x86 TUPLE2
+18264: J    BININT     227
+18269: \x85 TUPLE1
+18270: J    BININT     2
+18275: \x85 TUPLE1
+18276: \x86 TUPLE2
+18277: \x86 TUPLE2
+18278: J    BININT     46
+18283: \x85 TUPLE1
+18284: J    BININT     35
+18289: \x85 TUPLE1
+18290: \x86 TUPLE2
+18291: J    BININT     71
+18296: \x85 TUPLE1
+18297: J    BININT     250
+18302: \x85 TUPLE1
+18303: \x86 TUPLE2
+18304: \x86 TUPLE2
+18305: \x86 TUPLE2
+18306: J    BININT     246
+18311: \x85 TUPLE1
+18312: J    BININT     38
+18317: \x85 TUPLE1
+18318: \x86 TUPLE2
+18319: J    BININT     136
+18324: \x85 TUPLE1
+18325: J    BININT     255
+18330: \x85 TUPLE1
+18331: \x86 TUPLE2
+18332: \x86 TUPLE2
+18333: J    BININT     199
+18338: \x85 TUPLE1
+18339: J    BININT     29
+18344: \x85 TUPLE1
+18345: \x86 TUPLE2
+18346: J    BININT     20
+18351: \x85 TUPLE1
+18352: J    BININT     242
+18357: \x85 TUPLE1
+18358: \x86 TUPLE2
+18359: \x86 TUPLE2
+18360: \x86 TUPLE2
+18361: \x86 TUPLE2
+18362: \x86 TUPLE2
+18363: J    BININT     238
+18368: \x85 TUPLE1
+18369: J    BININT     126
+18374: \x85 TUPLE1
+18375: \x86 TUPLE2
+18376: J    BININT     17
+18381: \x85 TUPLE1
+18382: J    BININT     179
+18387: \x85 TUPLE1
+18388: \x86 TUPLE2
+18389: \x86 TUPLE2
+18390: J    BININT     148
+18395: \x85 TUPLE1
+18396: J    BININT     220
+18401: \x85 TUPLE1
+18402: \x86 TUPLE2
+18403: J    BININT     240
+18408: \x85 TUPLE1
+18409: J    BININT     86
+18414: \x85 TUPLE1
+18415: \x86 TUPLE2
+18416: \x86 TUPLE2
+18417: \x86 TUPLE2
+18418: J    BININT     59
+18423: \x85 TUPLE1
+18424: J    BININT     145
+18429: \x85 TUPLE1
+18430: \x86 TUPLE2
+18431: J    BININT     80
+18436: \x85 TUPLE1
+18437: J    BININT     189
+18442: \x85 TUPLE1
+18443: \x86 TUPLE2
+18444: \x86 TUPLE2
+18445: J    BININT     224
+18450: \x85 TUPLE1
+18451: J    BININT     170
+18456: \x85 TUPLE1
+18457: \x86 TUPLE2
+18458: J    BININT     24
+18463: \x85 TUPLE1
+18464: J    BININT     143
+18469: \x85 TUPLE1
+18470: \x86 TUPLE2
+18471: \x86 TUPLE2
+18472: \x86 TUPLE2
+18473: \x86 TUPLE2
+18474: J    BININT     0
+18479: \x85 TUPLE1
+18480: J    BININT     10
+18485: \x85 TUPLE1
+18486: \x86 TUPLE2
+18487: J    BININT     166
+18492: \x85 TUPLE1
+18493: J    BININT     77
+18498: \x85 TUPLE1
+18499: \x86 TUPLE2
+18500: \x86 TUPLE2
+18501: J    BININT     41
+18506: \x85 TUPLE1
+18507: J    BININT     203
+18512: \x85 TUPLE1
+18513: \x86 TUPLE2
+18514: J    BININT     31
+18519: \x85 TUPLE1
+18520: J    BININT     90
+18525: \x85 TUPLE1
+18526: \x86 TUPLE2
+18527: \x86 TUPLE2
+18528: \x86 TUPLE2
+18529: J    BININT     239
+18534: \x85 TUPLE1
+18535: J    BININT     191
+18540: \x85 TUPLE1
+18541: \x86 TUPLE2
+18542: J    BININT     197
+18547: \x85 TUPLE1
+18548: J    BININT     112
+18553: \x85 TUPLE1
+18554: \x86 TUPLE2
+18555: \x86 TUPLE2
+18556: J    BININT     159
+18561: \x85 TUPLE1
+18562: J    BININT     118
+18567: \x85 TUPLE1
+18568: \x86 TUPLE2
+18569: J    BININT     157
+18574: \x85 TUPLE1
+18575: J    BININT     244
+18580: \x85 TUPLE1
+18581: \x86 TUPLE2
+18582: \x86 TUPLE2
+18583: \x86 TUPLE2
+18584: \x86 TUPLE2
+18585: \x86 TUPLE2
+18586: \x86 TUPLE2
+18587: J    BININT     226
+18592: \x85 TUPLE1
+18593: J    BININT     216
+18598: \x85 TUPLE1
+18599: \x86 TUPLE2
+18600: J    BININT     43
+18605: \x85 TUPLE1
+18606: J    BININT     49
+18611: \x85 TUPLE1
+18612: \x86 TUPLE2
+18613: \x86 TUPLE2
+18614: J    BININT     70
+18619: \x85 TUPLE1
+18620: J    BININT     93
+18625: \x85 TUPLE1
+18626: \x86 TUPLE2
+18627: J    BININT     50
+18632: \x85 TUPLE1
+18633: J    BININT     78
+18638: \x85 TUPLE1
+18639: \x86 TUPLE2
+18640: \x86 TUPLE2
+18641: \x86 TUPLE2
+18642: J    BININT     7
+18647: \x85 TUPLE1
+18648: J    BININT     208
+18653: \x85 TUPLE1
+18654: \x86 TUPLE2
+18655: J    BININT     96
+18660: \x85 TUPLE1
+18661: J    BININT     202
+18666: \x85 TUPLE1
+18667: \x86 TUPLE2
+18668: \x86 TUPLE2
+18669: J    BININT     89
+18674: \x85 TUPLE1
+18675: J    BININT     108
+18680: \x85 TUPLE1
+18681: \x86 TUPLE2
+18682: J    BININT     168
+18687: \x85 TUPLE1
+18688: J    BININT     235
+18693: \x85 TUPLE1
+18694: \x86 TUPLE2
+18695: \x86 TUPLE2
+18696: \x86 TUPLE2
+18697: \x86 TUPLE2
+18698: J    BININT     3
+18703: \x85 TUPLE1
+18704: J    BININT     254
+18709: \x85 TUPLE1
+18710: \x86 TUPLE2
+18711: J    BININT     146
+18716: \x85 TUPLE1
+18717: J    BININT     55
+18722: \x85 TUPLE1
+18723: \x86 TUPLE2
+18724: \x86 TUPLE2
+18725: J    BININT     9
+18730: \x85 TUPLE1
+18731: J    BININT     180
+18736: \x85 TUPLE1
+18737: \x86 TUPLE2
+18738: J    BININT     241
+18743: \x85 TUPLE1
+18744: J    BININT     121
+18749: \x85 TUPLE1
+18750: \x86 TUPLE2
+18751: \x86 TUPLE2
+18752: \x86 TUPLE2
+18753: J    BININT     98
+18758: \x85 TUPLE1
+18759: J    BININT     110
+18764: \x85 TUPLE1
+18765: \x86 TUPLE2
+18766: J    BININT     68
+18771: \x85 TUPLE1
+18772: J    BININT     83
+18777: \x85 TUPLE1
+18778: \x86 TUPLE2
+18779: \x86 TUPLE2
+18780: J    BININT     63
+18785: \x85 TUPLE1
+18786: J    BININT     42
+18791: \x85 TUPLE1
+18792: \x86 TUPLE2
+18793: J    BININT     69
+18798: \x85 TUPLE1
+18799: J    BININT     52
+18804: \x85 TUPLE1
+18805: \x86 TUPLE2
+18806: \x86 TUPLE2
+18807: \x86 TUPLE2
+18808: \x86 TUPLE2
+18809: \x86 TUPLE2
+18810: J    BININT     30
+18815: \x85 TUPLE1
+18816: J    BININT     221
+18821: \x85 TUPLE1
+18822: \x86 TUPLE2
+18823: J    BININT     27
+18828: \x85 TUPLE1
+18829: J    BININT     248
+18834: \x85 TUPLE1
+18835: \x86 TUPLE2
+18836: \x86 TUPLE2
+18837: J    BININT     33
+18842: \x85 TUPLE1
+18843: J    BININT     147
+18848: \x85 TUPLE1
+18849: \x86 TUPLE2
+18850: J    BININT     205
+18855: \x85 TUPLE1
+18856: J    BININT     14
+18861: \x85 TUPLE1
+18862: \x86 TUPLE2
+18863: \x86 TUPLE2
+18864: \x86 TUPLE2
+18865: J    BININT     56
+18870: \x85 TUPLE1
+18871: J    BININT     116
+18876: \x85 TUPLE1
+18877: \x86 TUPLE2
+18878: J    BININT     173
+18883: \x85 TUPLE1
+18884: J    BININT     192
+18889: \x85 TUPLE1
+18890: \x86 TUPLE2
+18891: \x86 TUPLE2
+18892: J    BININT     53
+18897: \x85 TUPLE1
+18898: J    BININT     74
+18903: \x85 TUPLE1
+18904: \x86 TUPLE2
+18905: J    BININT     234
+18910: \x85 TUPLE1
+18911: J    BININT     223
+18916: \x85 TUPLE1
+18917: \x86 TUPLE2
+18918: \x86 TUPLE2
+18919: \x86 TUPLE2
+18920: \x86 TUPLE2
+18921: J    BININT     154
+18926: \x85 TUPLE1
+18927: J    BININT     67
+18932: \x85 TUPLE1
+18933: \x86 TUPLE2
+18934: J    BININT     187
+18939: \x85 TUPLE1
+18940: J    BININT     217
+18945: \x85 TUPLE1
+18946: \x86 TUPLE2
+18947: \x86 TUPLE2
+18948: J    BININT     23
+18953: \x85 TUPLE1
+18954: J    BININT     134
+18959: \x85 TUPLE1
+18960: \x86 TUPLE2
+18961: J    BININT     171
+18966: \x85 TUPLE1
+18967: J    BININT     102
+18972: \x85 TUPLE1
+18973: \x86 TUPLE2
+18974: \x86 TUPLE2
+18975: \x86 TUPLE2
+18976: J    BININT     22
+18981: \x85 TUPLE1
+18982: J    BININT     204
+18987: \x85 TUPLE1
+18988: \x86 TUPLE2
+18989: J    BININT     249
+18994: \x85 TUPLE1
+18995: J    BININT     245
+19000: \x85 TUPLE1
+19001: \x86 TUPLE2
+19002: \x86 TUPLE2
+19003: J    BININT     219
+19008: \x85 TUPLE1
+19009: J    BININT     144
+19014: \x85 TUPLE1
+19015: \x86 TUPLE2
+19016: J    BININT     48
+19021: \x85 TUPLE1
+19022: J    BININT     133
+19027: \x85 TUPLE1
+19028: \x86 TUPLE2
+19029: \x86 TUPLE2
+19030: \x86 TUPLE2
+19031: \x86 TUPLE2
+19032: \x86 TUPLE2
+19033: \x86 TUPLE2
+19034: \x86 TUPLE2
+19035: \x86 TUPLE2
+19036: \x94 MEMOIZE    (as 0)
+19037: 0    POP
+19038: c    GLOBAL     'builtins type'
+19053: c    GLOBAL     '__main__ amazing_function'
+19080: \x85 TUPLE1
+19081: R    REDUCE
+19082: c    GLOBAL     'builtins type'
+19097: c    GLOBAL     'builtins getattr'
+19115: c    GLOBAL     '__main__ amazing_function'
+19142: S    STRING     '__code__'
+19154: \x86 TUPLE2
+19155: R    REDUCE
+19156: \x85 TUPLE1
+19157: R    REDUCE
+19158: (    MARK
+19159: J        BININT     2
+19164: J        BININT     0
+19169: J        BININT     0
+19174: J        BININT     5
+19179: J        BININT     6
+19184: J        BININT     67
+19189: B        BINBYTES   b'd\x01}\x02zB|\x00\\\x02}\x03}\x04|\x01d\x02\x16\x00|\x02k\x02r0|\x04}\x00|\x01d\x02\x1c\x00}\x01d\x03|\x02\x18\x00}\x02n\x14|\x03}\x00|\x01d\x02\x1c\x00}\x01d\x03|\x02\x18\x00}\x02W\x00q\x04\x01\x00\x01\x00\x01\x00|\x00d\x01\x19\x00\x06\x00Y\x00S\x000\x00q\x04d\x00S\x00'
+19292: (        MARK
+19293: N            NONE
+19294: J            BININT     0
+19299: J            BININT     2
+19304: J            BININT     1
+19309: t            TUPLE      (MARK at 19292)
+19310: (        MARK
+19311: t            TUPLE      (MARK at 19310)
+19312: (        MARK
+19313: S            STRING     'a'
+19318: S            STRING     'b'
+19323: S            STRING     'c'
+19328: S            STRING     'a0'
+19334: S            STRING     'a1'
+19340: t            TUPLE      (MARK at 19312)
+19341: S        STRING     'something_suspicious.py'
+19368: S        STRING     'search'
+19378: J        BININT     45
+19383: B        BINBYTES   b'\x00\x01\x04\x02\x02\x01\x08\x01\x0c\x01\x04\x01\x08\x01\n\x02\x04\x01\x08\x01\x0c\x01\x06\x01'
+19412: (        MARK
+19413: t            TUPLE      (MARK at 19412)
+19414: (        MARK
+19415: t            TUPLE      (MARK at 19414)
+19416: t        TUPLE      (MARK at 19158)
+19417: R    REDUCE
+19418: }    EMPTY_DICT
+19419: \x86 TUPLE2
+19420: R    REDUCE
+19421: \x94 MEMOIZE    (as 1)
+19422: 0    POP
+19423: c    GLOBAL     'builtins type'
+19438: c    GLOBAL     '__main__ amazing_function'
+19465: \x85 TUPLE1
+19466: R    REDUCE
+19467: c    GLOBAL     'builtins type'
+19482: c    GLOBAL     'builtins getattr'
+19500: c    GLOBAL     '__main__ amazing_function'
+19527: S    STRING     '__code__'
+19539: \x86 TUPLE2
+19540: R    REDUCE
+19541: \x85 TUPLE1
+19542: R    REDUCE
+19543: (    MARK
+19544: J        BININT     1
+19549: J        BININT     0
+19554: J        BININT     0
+19559: J        BININT     6
+19564: J        BININT     5
+19569: J        BININT     67
+19574: B        BINBYTES   b'|\x00\xa0\x00\xa1\x00}\x01g\x00}\x02d\x01}\x03|\x03|\x01k\x00rvd\x02\\\x02}\x04}\x05|\x05|\x01k\x00rN|\x04|\x05d\x03\x17\x00|\x00|\x03|\x05\x17\x00|\x01\x16\x00\x19\x00\x14\x007\x00}\x04|\x05d\x037\x00}\x05q |\x04d\x04;\x00}\x04|\x04d\x05k\x00sbJ\x00\x82\x01|\x02\xa0\x01|\x04\xa1\x01\x01\x00|\x03d\x037\x00}\x03q\x10|\x02S\x00'
+19701: (        MARK
+19702: N            NONE
+19703: J            BININT     0
+19708: (            MARK
+19709: J                BININT     0
+19714: J                BININT     0
+19719: t                TUPLE      (MARK at 19708)
+19720: J            BININT     1
+19725: J            BININT     257
+19730: J            BININT     256
+19735: t            TUPLE      (MARK at 19701)
+19736: (        MARK
+19737: S            STRING     '__len__'
+19748: S            STRING     'append'
+19758: t            TUPLE      (MARK at 19736)
+19759: (        MARK
+19760: S            STRING     'a'
+19765: S            STRING     'ln'
+19771: S            STRING     'arr'
+19778: S            STRING     'i'
+19783: S            STRING     's'
+19788: S            STRING     'j'
+19793: t            TUPLE      (MARK at 19759)
+19794: S        STRING     'something_suspicious.py'
+19821: S        STRING     'mix'
+19828: J        BININT     61
+19833: B        BINBYTES   b'\x00\x01\x08\x01\x04\x01\x04\x01\x08\x01\x08\x01\x08\x01\x1c\x01\n\x01\x08\x01\x0c\x01\n\x01\n\x01'
+19864: (        MARK
+19865: t            TUPLE      (MARK at 19864)
+19866: (        MARK
+19867: t            TUPLE      (MARK at 19866)
+19868: t        TUPLE      (MARK at 19543)
+19869: R    REDUCE
+19870: }    EMPTY_DICT
+19871: \x86 TUPLE2
+19872: R    REDUCE
+19873: c    GLOBAL     '__main__ rick_says'
+19893: \x85 TUPLE1
+19894: R    REDUCE
+19895: \x94 MEMOIZE    (as 2)
+19896: 0    POP
+19897: c    GLOBAL     'builtins print'
+19913: c    GLOBAL     '__main__ amazing_function'
+19940: (    MARK
+19941: g        GET        1		-->search
+19944: g        GET        0		-->tuples
+19947: c        GLOBAL     '__main__ amazing_function'
+19974: g        GET        2		-->mix(rick_says)
+19977: J        BININT     0
+19982: \x86     TUPLE2			-->(mix(rick_says),0)
+19983: R        REDUCE
+19984: \x86     TUPLE2
+19985: R        REDUCE
+19986: g        GET        1
+19989: g        GET        0
+19992: c        GLOBAL     '__main__ amazing_function'
+20019: g        GET        2
+20022: J        BININT     1
+20027: \x86     TUPLE2
+20028: R        REDUCE
+20029: \x86     TUPLE2
+20030: R        REDUCE
+20031: g        GET        1
+20034: g        GET        0
+20037: c        GLOBAL     '__main__ amazing_function'
+20064: g        GET        2
+20067: J        BININT     2
+20072: \x86     TUPLE2
+20073: R        REDUCE
+20074: \x86     TUPLE2
+20075: R        REDUCE
+20076: g        GET        1
+20079: g        GET        0
+20082: c        GLOBAL     '__main__ amazing_function'
+20109: g        GET        2
+20112: J        BININT     3
+20117: \x86     TUPLE2
+20118: R        REDUCE
+20119: \x86     TUPLE2
+20120: R        REDUCE
+20121: g        GET        1
+20124: g        GET        0
+20127: c        GLOBAL     '__main__ amazing_function'
+20154: g        GET        2
+20157: J        BININT     4
+20162: \x86     TUPLE2
+20163: R        REDUCE
+20164: \x86     TUPLE2
+20165: R        REDUCE
+20166: g        GET        1
+20169: g        GET        0
+20172: c        GLOBAL     '__main__ amazing_function'
+20199: g        GET        2
+20202: J        BININT     5
+20207: \x86     TUPLE2
+20208: R        REDUCE
+20209: \x86     TUPLE2
+20210: R        REDUCE
+20211: g        GET        1
+20214: g        GET        0
+20217: c        GLOBAL     '__main__ amazing_function'
+20244: g        GET        2
+20247: J        BININT     6
+20252: \x86     TUPLE2
+20253: R        REDUCE
+20254: \x86     TUPLE2
+20255: R        REDUCE
+20256: g        GET        1
+20259: g        GET        0
+20262: c        GLOBAL     '__main__ amazing_function'
+20289: g        GET        2
+20292: J        BININT     7
+20297: \x86     TUPLE2
+20298: R        REDUCE
+20299: \x86     TUPLE2
+20300: R        REDUCE
+20301: g        GET        1
+20304: g        GET        0
+20307: c        GLOBAL     '__main__ amazing_function'
+20334: g        GET        2
+20337: J        BININT     8
+20342: \x86     TUPLE2
+20343: R        REDUCE
+20344: \x86     TUPLE2
+20345: R        REDUCE
+20346: g        GET        1
+20349: g        GET        0
+20352: c        GLOBAL     '__main__ amazing_function'
+20379: g        GET        2
+20382: J        BININT     9
+20387: \x86     TUPLE2
+20388: R        REDUCE
+20389: \x86     TUPLE2
+20390: R        REDUCE
+20391: g        GET        1
+20394: g        GET        0
+20397: c        GLOBAL     '__main__ amazing_function'
+20424: g        GET        2
+20427: J        BININT     10
+20432: \x86     TUPLE2
+20433: R        REDUCE
+20434: \x86     TUPLE2
+20435: R        REDUCE
+20436: g        GET        1
+20439: g        GET        0
+20442: c        GLOBAL     '__main__ amazing_function'
+20469: g        GET        2
+20472: J        BININT     11
+20477: \x86     TUPLE2
+20478: R        REDUCE
+20479: \x86     TUPLE2
+20480: R        REDUCE
+20481: g        GET        1
+20484: g        GET        0
+20487: c        GLOBAL     '__main__ amazing_function'
+20514: g        GET        2
+20517: J        BININT     12
+20522: \x86     TUPLE2
+20523: R        REDUCE
+20524: \x86     TUPLE2
+20525: R        REDUCE
+20526: g        GET        1
+20529: g        GET        0
+20532: c        GLOBAL     '__main__ amazing_function'
+20559: g        GET        2
+20562: J        BININT     13
+20567: \x86     TUPLE2
+20568: R        REDUCE
+20569: \x86     TUPLE2
+20570: R        REDUCE
+20571: g        GET        1
+20574: g        GET        0
+20577: c        GLOBAL     '__main__ amazing_function'
+20604: g        GET        2
+20607: J        BININT     14
+20612: \x86     TUPLE2
+20613: R        REDUCE
+20614: \x86     TUPLE2
+20615: R        REDUCE
+20616: g        GET        1
+20619: g        GET        0
+20622: c        GLOBAL     '__main__ amazing_function'
+20649: g        GET        2
+20652: J        BININT     15
+20657: \x86     TUPLE2
+20658: R        REDUCE
+20659: \x86     TUPLE2
+20660: R        REDUCE
+20661: g        GET        1
+20664: g        GET        0
+20667: c        GLOBAL     '__main__ amazing_function'
+20694: g        GET        2
+20697: J        BININT     16
+20702: \x86     TUPLE2
+20703: R        REDUCE
+20704: \x86     TUPLE2
+20705: R        REDUCE
+20706: g        GET        1
+20709: g        GET        0
+20712: c        GLOBAL     '__main__ amazing_function'
+20739: g        GET        2
+20742: J        BININT     17
+20747: \x86     TUPLE2
+20748: R        REDUCE
+20749: \x86     TUPLE2
+20750: R        REDUCE
+20751: g        GET        1
+20754: g        GET        0
+20757: c        GLOBAL     '__main__ amazing_function'
+20784: g        GET        2
+20787: J        BININT     18
+20792: \x86     TUPLE2
+20793: R        REDUCE
+20794: \x86     TUPLE2
+20795: R        REDUCE
+20796: g        GET        1
+20799: g        GET        0
+20802: c        GLOBAL     '__main__ amazing_function'
+20829: g        GET        2
+20832: J        BININT     19
+20837: \x86     TUPLE2
+20838: R        REDUCE
+20839: \x86     TUPLE2
+20840: R        REDUCE
+20841: g        GET        1
+20844: g        GET        0
+20847: c        GLOBAL     '__main__ amazing_function'
+20874: g        GET        2
+20877: J        BININT     20
+20882: \x86     TUPLE2
+20883: R        REDUCE
+20884: \x86     TUPLE2
+20885: R        REDUCE
+20886: t        TUPLE      (MARK at 19940)
+20887: (    MARK
+20888: J        BININT     53
+20893: J        BININT     158
+20898: J        BININT     33
+20903: J        BININT     115
+20908: J        BININT     5
+20913: J        BININT     17
+20918: J        BININT     103
+20923: J        BININT     3
+20928: J        BININT     67
+20933: J        BININT     240
+20938: J        BININT     39
+20943: J        BININT     27
+20948: J        BININT     19
+20953: J        BININT     68
+20958: J        BININT     81
+20963: J        BININT     107
+20968: J        BININT     245
+20973: J        BININT     82
+20978: J        BININT     130
+20983: J        BININT     159
+20988: J        BININT     227
+20993: t        TUPLE      (MARK at 20887)
+20994: c    GLOBAL     '__main__ rick_says'
+21014: \x87 TUPLE3
+21015: R    REDUCE
+21016: \x85 TUPLE1
+21017: R    REDUCE
+21018: .    STOP
+highest protocol among opcodes = 4
