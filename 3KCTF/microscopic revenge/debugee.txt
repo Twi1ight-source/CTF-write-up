@@ -1,0 +1,152 @@
+
+
+ub_8D2610      proc near               ; CODE XREF: _main+1D↑p
+.text:008D2610                 mov     ecx, 0
+.text:008D2615                 mov     edx, off_8D6178
+.text:008D261B
+.text:008D261B loc_8D261B:                             ; CODE XREF: sub_8D2622+6↓j
+.text:008D261B                 mov     eax, 1
+.text:008D2620                 ud2                     ;      --> edx[0] ^=0xee
+.text:008D2620 sub_8D2610      endp
+.text:008D2620
+.text:008D2622
+.text:008D2622 ; =============== S U B R O U T I N E =======================================
+.text:008D2622
+.text:008D2622 ; ecx+=1 (0+=1)
+.text:008D2622 ; Attributes: noreturn
+.text:008D2622
+.text:008D2622 sub_8D2622      proc near
+.text:008D2622                 add     ecx, 1
+.text:008D2625                 cmp     ecx, 6
+.text:008D2628                 jl      short loc_8D261B ; for ecx in range(6):
+.text:008D2628                                         ;      --> edx[ecx] ^=0xee
+.text:008D262A                 mov     ecx, 0
+.text:008D262F                 mov     edx, off_8D6178
+.text:008D2635
+.text:008D2635 loc_8D2635:                             ; CODE XREF: sub_8D263C+6↓j
+.text:008D2635                 mov     eax, 2
+.text:008D263A                 ud2                     ;     -->print(edx[ecx])
+.text:008D263A sub_8D2622      endp
+.text:008D263A
+.text:008D263C
+.text:008D263C ; =============== S U B R O U T I N E =======================================
+.text:008D263C
+.text:008D263C ; Attributes: noreturn
+.text:008D263C
+.text:008D263C sub_8D263C      proc near
+.text:008D263C                 add     ecx, 1
+.text:008D263F                 cmp     ecx, 6
+.text:008D2642                 jl      short loc_8D2635 ;     -->Flag:
+.text:008D2644                 mov     eax, 3
+.text:008D2649                 ud2			      -->Get input
+.text:008D2649 sub_8D263C      endp
+.text:008D2649
+.text:008D264B
+.text:008D264B ; =============== S U B R O U T I N E =======================================
+.text:008D264B
+.text:008D264B ; Attributes: noreturn
+.text:008D264B
+.text:008D264B sub_8D264B      proc near
+.text:008D264B                 mov     eax, 4			
+.text:008D2650                 ud2			    	-->get len(input)  (edx)
+.text:008D2650 sub_8D264B      endp
+.text:008D2650
+.text:008D2652
+.text:008D2652 ; =============== S U B R O U T I N E =======================================
+.text:008D2652
+.text:008D2652 ; Attributes: noreturn
+.text:008D2652
+.text:008D2652 sub_8D2652      proc near
+.text:008D2652                 cmp     edx, 28h ; '('		
+.text:008D2655                 jnz     loc_8D2705		--> if len(input) != 0x28  -->:(
+.text:008D265B                 mov     ecx, 0
+.text:008D2660                 mov     edx, off_8D6024          -->input
+.text:008D2666
+.text:008D2666 loc_8D2666:                             ; CODE XREF: sub_8D2652+21↓j
+.text:008D2666                 mov     eax, 5
+.text:008D266B                 ud2				-->input[i] = Block[i]*2
+.text:008D266D ; ---------------------------------------------------------------------------
+.text:008D266D                 add     ecx, 1
+.text:008D2670                 cmp     ecx, 28h ; '('
+.text:008D2673                 jl      short loc_8D2666       -->while ecx < 0x28 jump to loc_8D2666 
+.text:008D2675                 mov     edx, 5		       -->edx=5
+.text:008D267A                 mov     ecx, 1DB038C5h	       -->ecx =0x1DB038C5
+.text:008D267F                 mov     eax, 6
+.text:008D2684                 ud2			       -->dword_8D6798 =ecx
+								-->dword_8D67A0=edx
+								-->dword_8D679C=0
+								-->dword_8D67A4=0
+.text:008D2686 ; ---------------------------------------------------------------------------
+.text:008D2686                 mov     ecx, 0			-->ecx=0
+.text:008D268B                 mov     esi, off_8D6024		-->esi= input
+.text:008D2691                 mov     edi, off_8D617C		-->edi=[]
+.text:008D2697                 mov     edx, offset sub_8D2550	-->edx =  adrr_sub_8D2550() 
+.text:008D269C
+.text:008D269C loc_8D269C:                             ; CODE XREF: sub_8D2652+57↓j
+.text:008D269C                 mov     eax, 7
+.text:008D26A1                 ud2				-->edi = sub_8D2550(input[i],5,0x1DB038C5) 
+.text:008D26A3 ; ---------------------------------------------------------------------------
+.text:008D26A3                 add     ecx, 1			-->ecx+=1
+.text:008D26A6                 cmp     ecx, 28h ; '('
+.text:008D26A9                 jl      short loc_8D269C		 -->while ecx < 0x28 -->jump loc_8D269C	
+.text:008D26AB                 mov     ecx, 0			-->ecx=0
+.text:008D26B0                 mov     esi, off_8D601C		-->esi= array1
+.text:008D26B6                 mov     edi, off_8D617C		-->edi after encrypt
+.text:008D26BC
+.text:008D26BC loc_8D26BC:                             ; CODE XREF: sub_8D2652+7B↓j
+.text:008D26BC                 mov     eax, 8
+.text:008D26C1                 ud2				-->compare esi[i] with edi[i]
+.text:008D26C3 ; ---------------------------------------------------------------------------
+.text:008D26C3                 test    edx, edx
+.text:008D26C5                 jnz     short loc_8D2705
+.text:008D26C7                 add     ecx, 1			-->ecx(i) +=1
+.text:008D26CA                 cmp     ecx, 28h ; '('		-->while ecx(i)<0x28 -->jump  loc_8D26BC
+.text:008D26CD                 jl      short loc_8D26BC
+.text:008D26CF                 mov     ecx, 0			-->ecx(i)=0
+.text:008D26D4                 mov     edx, off_8D6020
+.text:008D26DA
+.text:008D26DA loc_8D26DA:                             ; CODE XREF: sub_8D2652+95↓j
+.text:008D26DA                 mov     eax, 1
+.text:008D26DF                 ud2
+.text:008D26E1 ; ---------------------------------------------------------------------------
+.text:008D26E1                 add     ecx, 1
+.text:008D26E4                 cmp     ecx, 3
+.text:008D26E7                 jl      short loc_8D26DA
+.text:008D26E9                 mov     ecx, 0
+.text:008D26EE                 mov     edx, off_8D6020
+.text:008D26F4
+.text:008D26F4 loc_8D26F4:                             ; CODE XREF: sub_8D2652+AF↓j
+.text:008D26F4                 mov     eax, 2
+.text:008D26F9                 ud2
+.text:008D26FB ; ---------------------------------------------------------------------------
+.text:008D26FB                 add     ecx, 1
+.text:008D26FE                 cmp     ecx, 3
+.text:008D2701                 jl      short loc_8D26F4
+.text:008D2703                 jmp     short nullsub_2
+.text:008D2705 ; ---------------------------------------------------------------------------
+.text:008D2705
+.text:008D2705 loc_8D2705:                             ; CODE XREF: sub_8D2652+3↑j
+.text:008D2705                                         ; sub_8D2652+73↑j
+.text:008D2705                 mov     ecx, 0
+.text:008D270A                 mov     edx, off_8D6174
+.text:008D2710
+.text:008D2710 loc_8D2710:                             ; CODE XREF: .text:008D271D↓j
+.text:008D2710                 mov     eax, 1
+.text:008D2715                 ud2
+.text:008D2715 sub_8D2652      endp
+.text:008D2715
+.text:008D2717 ; ---------------------------------------------------------------------------
+.text:008D2717                 add     ecx, 1
+.text:008D271A                 cmp     ecx, 3
+.text:008D271D                 jl      short loc_8D2710
+.text:008D271F                 mov     ecx, 0
+.text:008D2724                 mov     edx, off_8D6174
+.text:008D272A
+.text:008D272A loc_8D272A:                             ; CODE XREF: .text:008D2737↓j
+.text:008D272A                 mov     eax, 2
+.text:008D272F                 ud2
+.text:008D2731 ; ---------------------------------------------------------------------------
+.text:008D2731                 add     ecx, 1
+.text:008D2734                 cmp     ecx, 3
+.text:008D2737                 jl      short loc_8D272A
+
