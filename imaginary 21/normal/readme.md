@@ -1,1 +1,0 @@
-Flag: ictf{A11_ha!1_th3_n3w_n0rm_n0r!}
