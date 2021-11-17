@@ -47,10 +47,15 @@ Tới đây thì ta cần mapping lại với mỗi opcode, dùng script sau (ma
 -->Khi có được mapping rồi thì bắt đầu convert lại thôi:
 
 Nên nhớ cấu trúc file .pyc 3.8 gồm:
+
     +4 byte đầu là magic header ()
+    
     +12 bytes tiếp theo là timestamp
+    
     +phần còn lại là code_object  (load bằng marshal module)
+    
     +trong code_object có 2 phần cần lưu ý là: co_code và co_const (đây là 2 phần cần sửa)
+    
     +Mỗi opcode number chỉ có 1 byte và nằm ở vị trí chẵn trong co_code
 
 
