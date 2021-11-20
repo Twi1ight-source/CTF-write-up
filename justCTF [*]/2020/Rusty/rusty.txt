@@ -1,0 +1,67 @@
+check=[325, 324, 315, 283, 251, 251, 288, 316, 337, 322, 327, 315, 321, 300, 320, 281, 281, 278, 327, 349, 323, 309, 306, 312, 310, 304, 314, 330, 329, 323, 322, 318, 308, 250, 242, 217, 230, 210, 209, 214, 215, 211, 212, 169, 137, 99, 99, 191]
+from z3 import *
+s=Solver()
+
+inp=[BitVec(f'{i}',8) for i in range(55)]
+for c in inp:
+    s.add(c>0x20,c<0x7f)
+s.add(inp[0]==ord('j'))
+s.add(inp[1]==ord('c'))
+s.add(inp[2]==ord('t'))
+s.add(inp[3]==ord('f'))
+s.add(inp[4]==ord('{'))
+s.add(inp[54]== ord('}'))
+
+for i in range(7,55):
+    a=inp[(i-2)%0x37]
+    b=inp[(i-1)%0x37]
+    c=inp[i%0x37]
+    sum=a+b+c
+    s.add(sum==check[i-7])
+
+print(s.check())
+flag=""
+if s.check() == sat:
+    m=s.model()
+    for i in inp:
+        flag+=chr(m[i].as_long())
+
+print(flag)
+
+----------------------enc-----------------------------------
+enc=b'\x3E\x49\x26\x52\x45\x22\x42\x10\x66\x0B\x6C\x06\x0D\x50\x0F\x4C\x25\x4C\x3F\x12\x56\x03\x20\x5A\x14\x61\x4A\x3F\x5D\x51\x12\x5C\x18\x05\x43\x39\x4F\x32\x0A'
+inp = b'justCTF{'
+
+#a=inp[0] ^ enc[0]
+#b=a ^ inp[1] ^ enc[1]
+#c= a ^ b ^ inp[2] ^ enc[2] 
+#d= a^b^c ^ inp[3] ^ enc[3]
+
+res=[0] * len(inp)
+for i in range(len(inp)):
+    res[i]=inp[i] ^ enc[i]
+    
+    for j in range(i):
+        res[i]= res[i] ^ res[j]
+        
+print(bytearray(res).decode())
+
+
+----------------------solve------------------------------
+
+enc=b'\x3E\x49\x26\x52\x45\x22\x42\x10\x66\x0B\x6C\x06\x0D\x50\x0F\x4C\x25\x4C\x3F\x12\x56\x03\x20\x5A\x14\x61\x4A\x3F\x5D\x51\x12\x5C\x18\x05\x43\x39\x4F\x32\x0A'
+inp = [0]*len(enc)
+target=b'This program cannot be run in DOS mode.'
+
+res=[0] * len(inp)
+for i in range(len(inp)):
+    for c in range(0x20,0x7f):
+        res[i]=c ^ enc[i]
+    
+        for j in range(i):
+            res[i]= res[i] ^ res[j]
+        if res[i]==target[i]:
+            inp[i]=c
+            break
+print(bytearray(inp).decode())
+
