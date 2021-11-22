@@ -48,7 +48,7 @@ Hàm updatekey() là mình xem từ sources , vẫn ko biết làm sao để có
 
 Dùng bằng code python thì kết quả lại sai một vài byte so với kết quả khi debug(chẳng hiểu làm sao)
 
--->Chuyển qua dùng c++ code (dùng uint_32)
+-->Chuyển qua dùng c++ code (dùng uint32_t)
 
 
 
