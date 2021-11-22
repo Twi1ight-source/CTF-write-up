@@ -40,6 +40,16 @@ Còn hàm sub_10E90C thì lại ko dịch được:
 
 Cuối cùng thì quá trình enc --> python thì thế này:
 
+![1](https://user-images.githubusercontent.com/84214843/142787969-cfc617d4-8aae-4857-b17a-1525362f4e84.png)
+
+![2](https://user-images.githubusercontent.com/84214843/142787982-ff3daae4-db70-4220-9b72-498df9f113e6.png)
+
+Hàm updatekey() là mình xem từ sources , vẫn ko biết làm sao để có
+
+Dùng bằng code python thì kết quả lại sai một vài byte so với kết quả khi debug(chẳng hiểu làm sao)
+
+-->Chuyển qua dùng c++ code (dùng uint_32)
+
 
 
      
