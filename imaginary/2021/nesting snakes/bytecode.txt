@@ -1,0 +1,598 @@
+stuff.pyc (Python 3.9)
+[Code]
+    File Name: stuff.py
+    Object Name: <module>
+    Arg Count: 0
+    Pos Only Arg Count: 0
+    KW Only Arg Count: 0
+    Locals: 0
+    Stack Size: 2
+    Flags: 0x00000040 (CO_NOFREE)
+    [Names]
+        'random'
+        'types'
+        '_____'
+        '_'
+    [Var Names]
+    [Free Vars]
+    [Cell Vars]
+    [Constants]
+        0
+        None
+        [Code]
+            File Name: stuff.py
+            Object Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 1
+            Stack Size: 1
+            Flags: 0x00000047 (CO_OPTIMIZED | CO_NEWLOCALS | CO_VARARGS | CO_NOFREE)
+            [Names]
+            [Var Names]
+                '_'
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+                False
+            [Disassembly]
+                0       LOAD_CONST              1: False
+                2       RETURN_VALUE            
+        '<lambda>'
+        [Code]
+            File Name: stuff.py
+            Object Name: _
+            Arg Count: 4
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 8
+            Stack Size: 20
+            Flags: 0x00000043 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)
+            [Names]
+                'random'
+                'seed'
+                'sum'
+                'encode'
+                'shuffle'
+                '_____'
+                'int'
+                'abs'
+                'len'
+                'append'
+                'types'
+                'FunctionType'
+                'CodeType'
+                'bytes'
+                '__builtins__'
+            [Var Names]
+                '_'
+                '__'
+                '___'
+                '____'
+                '__________'
+                '______'
+                '________'
+                '_______'
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+                'b'
+                1
+                0
+                7
+                38
+                67
+                (
+                    None
+                    0
+                    True
+                    -1
+                    (
+                        1
+                        0
+                        0
+                        1
+                        0
+                        -1
+                        1
+                        -1
+                        -1
+                        0
+                        0
+                        -1
+                        0
+                        0
+                        -1
+                        1
+                    )
+                    (
+                        1
+                        1
+                        1
+                        0
+                        -1
+                        0
+                        -1
+                        -1
+                        1
+                        1
+                        -1
+                        1
+                        0
+                        0
+                        0
+                        -1
+                    )
+                    (
+                        0
+                        0
+                        1
+                        0
+                        -1
+                        1
+                        -1
+                        -1
+                        0
+                        0
+                        1
+                        1
+                        -1
+                        -1
+                        0
+                        -1
+                    )
+                    (
+                        0
+                        1
+                        0
+                        1
+                        -1
+                        -1
+                        1
+                        0
+                        -1
+                        0
+                        1
+                        1
+                        1
+                        -1
+                        -1
+                        0
+                    )
+                    (
+                        0
+                        0
+                        0
+                        0
+                        -1
+                        1
+                        0
+                        -1
+                        -1
+                        -1
+                        1
+                        1
+                        -1
+                        -1
+                        0
+                        0
+                    )
+                    (
+                        0
+                        0
+                        1
+                        1
+                        0
+                        0
+                        1
+                        0
+                        0
+                        0
+                        1
+                        1
+                        -1
+                        1
+                        -1
+                        0
+                    )
+                    (
+                        -1
+                        0
+                        -1
+                        1
+                        1
+                        1
+                        -1
+                        0
+                        1
+                        -1
+                        -1
+                        0
+                        -1
+                        0
+                        1
+                        1
+                    )
+                    (
+                        0
+                        1
+                        -1
+                        1
+                        1
+                        1
+                        1
+                        1
+                        -1
+                        1
+                        -1
+                        1
+                        0
+                        1
+                        -1
+                        0
+                    )
+                    (
+                        0
+                        0
+                        1
+                        1
+                        -1
+                        1
+                        -1
+                        0
+                        1
+                        1
+                        -1
+                        1
+                        1
+                        1
+                        -1
+                        -1
+                    )
+                    (
+                        -1
+                        1
+                        0
+                        -1
+                        1
+                        1
+                        1
+                        0
+                        1
+                        -1
+                        0
+                        0
+                        -1
+                        1
+                        0
+                        -1
+                    )
+                    (
+                        0
+                        0
+                        -1
+                        1
+                        -1
+                        0
+                        0
+                        0
+                        -1
+                        -1
+                        -1
+                        1
+                        -1
+                        1
+                        1
+                        -1
+                    )
+                    (
+                        0
+                        0
+                        -1
+                        1
+                        -1
+                        1
+                        -1
+                        -1
+                        1
+                        -1
+                        -1
+                        -1
+                        0
+                        1
+                        0
+                        0
+                    )
+                    (
+                        0
+                        -1
+                        0
+                        0
+                        -1
+                        -1
+                        -1
+                        -1
+                        -1
+                        0
+                        -1
+                        0
+                        -1
+                        0
+                        0
+                        -1
+                    )
+                    (
+                        0
+                        -1
+                        0
+                        -1
+                        1
+                        1
+                        0
+                        1
+                        -1
+                        1
+                        1
+                        0
+                        0
+                        1
+                        -1
+                        -1
+                    )
+                    (
+                        0
+                        0
+                        1
+                        -1
+                        0
+                        0
+                        0
+                        0
+                        0
+                        1
+                        1
+                        0
+                        0
+                        1
+                        0
+                        -1
+                    )
+                    (
+                        1
+                        1
+                        1
+                        1
+                        -1
+                        1
+                        1
+                        0
+                        -1
+                        0
+                        0
+                        -1
+                        1
+                        0
+                        -1
+                        1
+                    )
+                    (
+                        0
+                        -1
+                        1
+                        -1
+                        1
+                        0
+                        1
+                        -1
+                        -1
+                        0
+                        -1
+                        -1
+                        0
+                        0
+                        -1
+                        -1
+                    )
+                    (
+                        0
+                        -1
+                        -1
+                        -1
+                        1
+                        -1
+                        1
+                        1
+                        -1
+                        -1
+                        0
+                        0
+                        0
+                        -1
+                        -1
+                        0
+                    )
+                    (
+                        0
+                        0
+                        -1
+                        -1
+                        -1
+                        -1
+                        -1
+                        1
+                        1
+                        0
+                        -1
+                        -1
+                        0
+                        -1
+                        -1
+                        1
+                    )
+                    16
+                    1
+                    False
+                )
+                (
+                    'random'
+                    'zip'
+                    'seed'
+                    'range'
+                    'append'
+                    'randint'
+                )
+                (
+                    'f'
+                    'random'
+                    '_____'
+                    '___'
+                    '____'
+                    '_'
+                    '__'
+                )
+                ''
+                b''
+                (
+                )
+                '__builtins__'
+                '_'
+            [Disassembly]
+                0       LOAD_GLOBAL             0: random
+                2       LOAD_METHOD             1: seed
+                4       LOAD_GLOBAL             2: sum
+                6       LOAD_FAST               3: ____
+                8       LOAD_METHOD             3: encode
+                10      CALL_METHOD             0
+                12      CALL_FUNCTION           1
+                14      CALL_METHOD             1
+                16      POP_TOP                 
+                18      LOAD_GLOBAL             0: random
+                20      LOAD_METHOD             4: shuffle
+                22      LOAD_FAST               1: __
+                24      CALL_METHOD             1
+                26      POP_TOP                 
+                28      BUILD_LIST              0
+                30      STORE_FAST              4: __________    #__________ = []
+                32      LOAD_FAST               2: ___
+                34      GET_ITER                
+                36      FOR_ITER                138 (to 176)
+                38      STORE_FAST              5: ______
+                40      LOAD_FAST               0: _
+                42      STORE_FAST              6: ________
+                44      LOAD_FAST               5: ______
+                46      LOAD_CONST              1: 'b'
+                48      FORMAT_VALUE            4		#{:b}.format(______)
+                50      LOAD_CONST              2: 1
+                52      LOAD_CONST              0: None
+                54      BUILD_SLICE             2		#slice(1,none)
+                56      BINARY_SUBSCR           		#{:b}.format(______)[1:]
+                58      GET_ITER                
+                60      FOR_ITER                78 (to 140)	
+                62      STORE_FAST              7: _______
+                64      LOAD_FAST               1: __
+                66      LOAD_FAST               6: ________		#__[________]
+                68      BINARY_SUBSCR           
+                70      LOAD_CONST              3: 0
+                72      COMPARE_OP              5 (>=)
+                74      POP_JUMP_IF_FALSE       88
+                76      LOAD_GLOBAL             5: _____
+                78      ROT_TWO                 
+                80      POP_TOP                 
+                82      ROT_TWO                 
+                84      POP_TOP                 
+                86      RETURN_VALUE            
+                88      LOAD_GLOBAL             6: int
+                90      LOAD_FAST               7: _______
+                92      CALL_FUNCTION           1
+                94      POP_JUMP_IF_TRUE        118
+                96      LOAD_GLOBAL             7: abs
+                98      LOAD_FAST               1: __
+                100     LOAD_FAST               6: ________
+                102     BINARY_SUBSCR           
+                104     CALL_FUNCTION           1
+                106     LOAD_GLOBAL             8: len
+                108     LOAD_FAST               1: __
+                110     CALL_FUNCTION           1
+                112     BINARY_FLOOR_DIVIDE     
+                114     STORE_FAST              6: ________
+                116     JUMP_ABSOLUTE           60
+                118     LOAD_GLOBAL             7: abs
+                120     LOAD_FAST               1: __
+                122     LOAD_FAST               6: ________
+                124     BINARY_SUBSCR           
+                126     CALL_FUNCTION           1
+                128     LOAD_GLOBAL             8: len
+                130     LOAD_FAST               1: __
+                132     CALL_FUNCTION           1
+                134     BINARY_MODULO           
+                136     STORE_FAST              6: ________
+                138     JUMP_ABSOLUTE           60
+                140     LOAD_FAST               1: __
+                142     LOAD_FAST               6: ________
+                144     BINARY_SUBSCR           
+                146     LOAD_CONST              3: 0
+                148     COMPARE_OP              0 (<)
+                150     POP_JUMP_IF_FALSE       160
+                152     LOAD_GLOBAL             5: _____
+                154     ROT_TWO                 
+                156     POP_TOP                 
+                158     RETURN_VALUE            
+                160     LOAD_FAST               4: __________
+                162     LOAD_METHOD             9: append
+                164     LOAD_FAST               1: __
+                166     LOAD_FAST               6: ________
+                168     BINARY_SUBSCR           
+                170     CALL_METHOD             1
+                172     POP_TOP                 
+                174     JUMP_ABSOLUTE           36
+                176     LOAD_GLOBAL             10: types
+                178     LOAD_METHOD             11: FunctionType
+                180     LOAD_GLOBAL             10: types
+                182     LOAD_METHOD             12: CodeType
+                184     LOAD_CONST              2: 1
+                186     LOAD_CONST              3: 0
+                188     LOAD_CONST              3: 0
+                190     LOAD_CONST              4: 7
+                192     LOAD_CONST              5: 38
+                194     LOAD_CONST              6: 67
+                196     LOAD_GLOBAL             13: bytes
+                198     LOAD_FAST               4: __________
+                200     CALL_FUNCTION           1
+                202     LOAD_CONST              7: (None, 0, True, -1, (1, 0, 0, 1, 0, -1, 1, -1, -1, 0, 0, -1, 0, 0, -1, 1), (1, 1, 1, 0, -1, 0, -1, -1, 1, 1, -1, 1, 0, 0, 0, -1), (0, 0, 1, 0, -1, 1, -1, -1, 0, 0, 1, 1, -1, -1, 0, -1), (0, 1, 0, 1, -1, -1, 1, 0, -1, 0, 1, 1, 1, -1, -1, 0), (0, 0, 0, 0, -1, 1, 0, -1, -1, -1, 1, 1, -1, -1, 0, 0), (0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, -1, 1, -1, 0), (-1, 0, -1, 1, 1, 1, -1, 0, 1, -1, -1, 0, -1, 0, 1, 1), (0, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 0, 1, -1, 0), (0, 0, 1, 1, -1, 1, -1, 0, 1, 1, -1, 1, 1, 1, -1, -1), (-1, 1, 0, -1, 1, 1, 1, 0, 1, -1, 0, 0, -1, 1, 0, -1), (0, 0, -1, 1, -1, 0, 0, 0, -1, -1, -1, 1, -1, 1, 1, -1), (0, 0, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 0, 1, 0, 0), (0, -1, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0, -1, 0, 0, -1), (0, -1, 0, -1, 1, 1, 0, 1, -1, 1, 1, 0, 0, 1, -1, -1), (0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, -1), (1, 1, 1, 1, -1, 1, 1, 0, -1, 0, 0, -1, 1, 0, -1, 1), (0, -1, 1, -1, 1, 0, 1, -1, -1, 0, -1, -1, 0, 0, -1, -1), (0, -1, -1, -1, 1, -1, 1, 1, -1, -1, 0, 0, 0, -1, -1, 0), (0, 0, -1, -1, -1, -1, -1, 1, 1, 0, -1, -1, 0, -1, -1, 1), 16, 1, False)
+                204     LOAD_CONST              8: ('random', 'zip', 'seed', 'range', 'append', 'randint')
+                206     LOAD_CONST              9: ('f', 'random', '_____', '___', '____', '_', '__')
+                208     LOAD_CONST              10: ''
+                210     LOAD_CONST              10: ''
+                212     LOAD_CONST              3: 0
+                214     LOAD_CONST              11: b''
+                216     LOAD_CONST              12: ()
+                218     LOAD_CONST              12: ()
+                220     CALL_METHOD             16
+                222     LOAD_CONST              13: '__builtins__'
+                224     LOAD_GLOBAL             14: __builtins__
+                226     BUILD_MAP               1
+                228     LOAD_CONST              14: '_'
+                230     CALL_METHOD             3
+                232     RETURN_VALUE            
+        '_'
+    [Disassembly]
+        0       LOAD_CONST              0: 0
+        2       LOAD_CONST              1: None
+        4       IMPORT_NAME             0: random
+        6       STORE_NAME              0: random
+        8       LOAD_CONST              0: 0
+        10      LOAD_CONST              1: None
+        12      IMPORT_NAME             1: types
+        14      STORE_NAME              1: types
+        16      LOAD_CONST              2: <CODE> <lambda>
+        18      LOAD_CONST              3: '<lambda>'
+        20      MAKE_FUNCTION           0
+        22      STORE_NAME              2: _____
+        24      LOAD_CONST              4: <CODE> _
+        26      LOAD_CONST              5: '_'
+        28      MAKE_FUNCTION           0
+        30      STORE_NAME              3: _
+        32      LOAD_CONST              1: None
+        34      RETURN_VALUE            
