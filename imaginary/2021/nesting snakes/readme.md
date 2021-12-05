@@ -12,6 +12,11 @@ Báo lỗi:
 
 ![1](https://user-images.githubusercontent.com/84214843/144733383-c420345d-3b71-4764-bc68-74d88dffa12d.png)
 
+-->Thử decompile main.pyc bằng pycdc mà thấy sai sai vì một số yếu tố nêu ra mà ko được sử dụng, thế là mình dùng pycas để disassemble bytecode rồi vừa ngồi dịch vừa đối chiếu với cái ở trên
+
+-->Kết quả là nó dịch thiếu hơi nhiều luôn :( 
+
+-->file main sau khi dịch đầy đủ (main.txt)
 
 
 
