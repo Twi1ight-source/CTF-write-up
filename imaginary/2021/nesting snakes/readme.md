@@ -22,6 +22,8 @@ Báo lỗi:
 
 ![1](https://user-images.githubusercontent.com/84214843/144733944-92d96732-649e-4871-b0a0-b0497bd4b74a.png)
 
+(link: https://python.hotexamples.com/examples/pyconcrete/-/encrypt_file/python-encrypt_file-function-examples.html)
+
 -->Thử decompile stuff.pyc bằng pycdc mà thấy sai sai vì một số yếu tố nêu ra mà ko được sử dụng, thế là mình dùng pycas để disassemble bytecode rồi vừa ngồi dịch vừa đối chiếu với cái ở trên
 
 -->Kết quả là nó dịch thiếu hơi nhiều luôn :( 
