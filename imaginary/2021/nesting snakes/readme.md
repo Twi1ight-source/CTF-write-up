@@ -26,13 +26,37 @@ Báo lỗi:
 
 -->Thử decompile stuff.pyc bằng pycdc mà thấy sai sai vì một số yếu tố nêu ra mà ko được sử dụng, thế là mình dùng pycas để disassemble bytecode rồi vừa ngồi dịch vừa đối chiếu với cái ở trên
 
--->Kết quả là nó dịch thiếu hơi nhiều luôn :( 
+-->Kết quả là nó dịch thiếu hơi nhiều luôn :(                         -->(stuff.txt)
 
 +Sau khi dịch ra đầy đủ, mình gộp hàm stuff với hàm main lúc nãy luôn --> (main.txt)
 
 +Có vể lấy input ở f rồi đem vô enc() rồi kết quả là ra mảng arr
 
 +Nhận thấy enc() chỉ lấy sum của input rồi qua một loạt biến đổi để tạo ra mảng arr-->bruce-force sum để lấy mảng arr(tránh các trường hợp return False) --> (bruce flag-sum.txt)
+
++Ta thu được kết quả:
+
+![1](https://user-images.githubusercontent.com/84214843/145177524-7b94be81-c65e-40c9-836b-19da0b21ba7c.png)
+
++Sau khi thu được mảng arr như trong main.txt:
+
+![1](https://user-images.githubusercontent.com/84214843/145178204-6503d04f-a031-4384-bcd3-a3b7f770f7f3.png)
+
+-->Có vẻ chương trình lại tiếp tục dùng mảng đó để tạo ra một mớ bytecode mới
+
+-->Dùng script sau để thực hiện tạo ra mớ bytecode mới              -->(create_bytecode.py)
+
+-->Thu được kết quả                                                 -->(dis.txt)
+
++Lại ngồi dịch tay tiếp
+
++Logic cuối cùng khá đơn giản, brute-force được                     -->xem (sol.py)
+
+
+
+
+
+
 
 
 
