@@ -50,7 +50,7 @@ Báo lỗi:
 
 +Lại ngồi dịch tay tiếp
 
-+Logic cuối cùng khá đơn giản, brute-force được                     -->xem (sol.py)
++Logic cuối cùng khá đơn giản, brute-force được                     -->xem (solve.py)
 
 
 
