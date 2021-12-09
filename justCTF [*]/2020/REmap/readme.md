@@ -60,6 +60,11 @@ Nên nhớ cấu trúc file .pyc 3.8 gồm:
 
 
 (convertPYcback.py)
+
+-->Hoặc không cần viết script chi cho mệt, đem mấy cái opcode bị thay đổi đó đưa vào file .map của pycdc rồi compile tool lại thôi.
+
+-->(mapping.pycdc)
+
 Tới đây thì decompile được rồi -->out.py
 
 cái out.py thì đơn giản là so sánh string thôi
