@@ -35,4 +35,31 @@
 
 -->Tiến hành đổi lại opcode trong file map của pycdc, nhưng vẫn dịch ko được, đành phải dùng pycas để xem
 
++Dịch tay thì ta thấy 2 đoạn sau:
+
+![1](https://user-images.githubusercontent.com/84214843/145698877-786b0636-40eb-4612-9fd0-8e089c909136.png)
+![2](https://user-images.githubusercontent.com/84214843/145698879-5bb19300-bc11-4fd2-a042-3bbca67948f1.png)
+
++Kết quả: 
+
+key = 0
+libc = ctypes.CDLL("libc.so.6")
+_ptrace = libc.ptrace
+key=_ptrace(0, 0, 1, 0)        
+_memcpy = libc.memcpy
+key += 1
+
+table=["f1", "f2", "c2.__add__", "c1.s1", "c2.__mul__", "f3"]
+x='''codes=list(%s.__code__.co_code)
+for i in range(len(codes)):codes[i]^=key
+codes=bytearray(codes)
+buff=(ctypes.c_byte*len(codes)).from_buffer(codes)
+_memcpy(ctypes.c_char_p(address),ctypes.cast(buff,ctypes.POINTER(ctypes.c_char)),ctypes.c_int(len(codes)))
+key+=1'''
+codes = [x%(i,i) for i in table]
+for i in codes:exec(i)
+
+
+
+
 
