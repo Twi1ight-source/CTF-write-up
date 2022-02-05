@@ -1,0 +1,83 @@
+lookup=open('not_flag', 'rb').read()
+
+def rev_v13(a):
+    tmp=a ^0xdead
+    tmp1=tmp&0xffff
+    tmp2=tmp>>16
+
+    res=[]
+    for x in range(0x000, 0xffff):
+        if lookup[2*(x^0xbeef)+1]==tmp1>>8 and lookup[2*(x^0xbeef)]==tmp1&0xff:
+            res.append(x)
+            break
+    
+    for x in range(0x000, 0xffff):
+        if lookup[2 * (x  ^ 0xbeef)+1]==tmp2>>8 and lookup[2 * (x ^ 0xbeef)]==tmp2&0xff:
+            res.append(x)
+            break
+        
+    return res[1]<<16 | res[0]
+
+def rev_v14(a):
+    tmp=a ^0x1337
+    tmp1=tmp&0xffff
+    tmp2=tmp>>16
+
+    res=[]
+    for x in range(0x000, 0xffff):
+        if lookup[2*(x^0xcafe)+1]==tmp1>>8 and lookup[2*(x^0xcafe)]==tmp1&0xff:
+            res.append(x)
+            break
+    
+    for x in range(0x000, 0xffff):
+        if lookup[2 * (x  ^ 0xcafe)+1]==tmp2>>8 and lookup[2 * (x ^ 0xcafe)]==tmp2&0xff:
+            res.append(x)
+            break
+    
+    return res[1]<<16 | res[0]
+
+def rev_v15(a):
+    tmp=rev_v14(a)
+    res=rev_v13(tmp)
+    return res
+
+def rev_v16(a):
+    tmp=rev_v13(a)
+    res=rev_v14(tmp)
+    return res
+    
+enc=[]
+data='5400f172 949c5165 c6bc4607 c621d63f c20c0970 f2b3f53c aabb67f9 fe0e7abb 6ae46e55 dd212d25 fb681ccb 2ef2f900 75dbefc4 a4e3a8dd 3c6ad4ea 2fa95919 4e6d7b44 b66bacf2 a0b7b0a3 ee57fd81 452a0ba4 a05d8829 5911680 439efce 75346c63 e2e8d40c 82551eb7 15f70f1 3365c553 4d88f5f1 1ea5b8ab faa1a4ae 91567996 13d89930 6b159c81 35779a3c 5d8573aa 75908ec b902a84 1501d8a0'
+data=data.split(' ')
+for i in data:
+    enc.append(int(f'0x{i}',16))
+
+for x in enc:
+    print(chr(rev_v15(rev_v16(x))&0xff))
+
+-----------------------------------------SOURCE---------------------------------------------
+lookup=open('not_flag', 'rb').read()
+
+def v13(a): 
+    tmp1=lookup[2*(a&0xffff^0xbeef)+1]<<8 | lookup[2*(a&0xffff^0xbeef)] #4 byte cuoi
+    tmp2=lookup[2 * ((a >> 16) ^ 0xbeef)+1]<<8 | lookup[2 * ((a >> 16) ^ 0xbeef)] #4 byte dau
+    return (tmp1 + (tmp2<<16)) ^0xdead
+
+def v14(a):
+    tmp1=lookup[2*(a&0xffff^0xcafe)+1]<<8 | lookup[2*(a&0xffff^0xcafe)]
+    tmp2=lookup[2 * ((a >> 16) ^ 0xcafe)+1]<<8 | lookup[2 * ((a >> 16) ^ 0xcafe)] 
+    return (tmp1 + (tmp2<<16)) ^0x1337
+    
+def v15(a):
+    tmp=v13(a)
+    res=v14(tmp)
+    return res
+
+def v16(a):
+    tmp=v14(a)      
+    res=v13(tmp)   
+    return res
+
+
+print(hex(v16(v15(0x1cc81e71)))) #=0x5400f172
+    
