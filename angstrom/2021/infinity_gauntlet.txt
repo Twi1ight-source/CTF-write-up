@@ -1,0 +1,57 @@
+
+from pwn import *
+import re
+
+p=process("./infinity_gauntlet")
+
+r1=re.compile(r"foo\(([\d\?]+), ([\d+\?]+)\) = ([\d\?]+)")
+r2=re.compile(r"bar\(([\d\?]+), ([\d\?]+), ([\d+\?]+)\) = ([\d\?]+)")
+
+buf=[0]*50
+print(p.recvline().decode().strip()) #Welcome to the infinity gauntlet!
+print(p.recvline().decode().strip()) #If you complete the gauntlet, you'll get the flag!
+
+round=0
+while round!=80:
+
+    round+=1
+    print(p.recvline().decode().strip()) #ROUND 
+    data=p.recvline().decode().strip()
+    print(data)
+    match1=r1.match(data)
+    match2=r2.match(data)
+
+    if match1 !=None:
+        grp=match1.groups()
+        if grp[0]=="?":
+            v15=int(grp[2])^0x539^(int(grp[1])+1)
+        if grp[1]=="?":
+            v15=(int(grp[2])^0x539^int(grp[0]))-1
+        if grp[2]=="?":
+            v15=int(grp[0])^0x539^(int(grp[1])+1)
+
+    elif match2 !=None:
+        grp=match2.groups()
+        if grp[0]=="?":
+            v15=int(grp[3])- (int(grp[1])*(int(grp[2])+1))
+        if grp[1]=="?":
+            v15=(int(grp[3])-int(grp[0]))//(int(grp[2])+1)
+        if grp[2]=="?":
+            v15=((int(grp[3])-int(grp[0]))//int(grp[1]))-1
+        if grp[3]=="?":
+            v15=(int(grp[2])+1)*int(grp[1]) + int(grp[0])
+
+
+    p.sendline(str(v15))
+    result = p.recvline().decode().strip()
+    print(result)
+          
+    if round>49:
+        print(v15)
+        pos=v15>>8-round
+        res=v15&0xff
+        buf[pos]=res
+        print(bytearray(buf))
+
+        
+
