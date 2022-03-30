@@ -34,6 +34,41 @@ với tham số thứ 2 là 0 có nghĩa là < (theo thứ tự (<, <=, ==, !=, 
 
 ![1](https://user-images.githubusercontent.com/84214843/160860804-d28eb3da-4b7a-496c-b83e-5a7dd4f6297f.png)
 
++Sau đó gọi getRandomNBitInteger(dbit)
+
+![1](https://user-images.githubusercontent.com/84214843/160877605-ec2686a8-4089-4ce2-896f-b6b42b278042.png)
+
++Gọi getRandomNBitInteger((nbit//2)-dbit):
+
+![1](https://user-images.githubusercontent.com/84214843/160878009-47184035-a5c8-4ad5-b684-38081b51e69b.png)
+
++Sau đó một loạt tính toán ....
+
+![1](https://user-images.githubusercontent.com/84214843/160879299-198e038e-da19-48ef-a8b0-22839019950b.png)
+
+-->hàm tuple new: tạo tuple 
+-->Call_constprop(): với tham số đầu trỏ tới hàm cần sử dụng, tham số sau trỏ tới tuple chứa tham số của hàm đó
+
++Quay lại main coi tiếp thấy encrypt():
+
+-->ko có hàm gi mới
+
+![1](https://user-images.githubusercontent.com/84214843/160880896-66e4b676-cf29-4e18-bad6-f5f3ca67e06b.png)
+
+-->pyx_int : khởi tạo hằng số
+
+-->SetItem : gán toán tử 
+
+![1](https://user-images.githubusercontent.com/84214843/160881373-5f7d6716-4940-4eda-8406-f29adf09555f.png)
+
+-->khi ta thấy hàm này có nghĩa tham số trong nó là một tuple
+
+
+
+
+
+
+
 
 
 
