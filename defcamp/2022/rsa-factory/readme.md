@@ -20,7 +20,7 @@ Note lại bài này phần reverse cython còn phần giải mã thì chịu :v
 
 Nó gọi 2 tham số của hàm là dbit với nbit
 
-![1](https://user-images.githubusercontent.com/84214843/160856499-3cb86297-0b48-496a-8dce-5eada4ddd1b9.png)
+![1](https://user-images.githubusercontent.com/84214843/160882101-c9a3828f-2722-433f-ad6e-3c22541a2b71.png)
 
 +nó định nghĩa dbit với nbit như trên, phải chuyển qua asm mới biết được
 
