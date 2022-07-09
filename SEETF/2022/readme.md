@@ -29,7 +29,7 @@
 
 * Tới đây thì có 2 cách: một là debug tới chỗ nó write process để lấy file dump, hai là dùng `cff explorer` để dump section 139 ra rồi decrypt bằng `cyberchef`.
 
--Sau khi dump ra được file exe thì nó bị unpack (dùng `die` xem phần `entrpy` thì thấy nó packed nhưng nó ko nhận dạng được packer nào), mở lên IDA xem thử thì thấy có các lệnh như `pushad` và `popad` nên khá chắc là `UPX` nhưng có lẽ đã bị thay đổi để tool không nhận diện được
+-Sau khi dump ra được file exe thì nó bị unpack (dùng `die` xem phần `entropy` thì thấy nó packed nhưng nó ko nhận dạng được packer nào), mở lên IDA xem thử thì thấy có các lệnh như `pushad` và `popad` nên khá chắc là `UPX` nhưng có lẽ đã bị thay đổi để tool không nhận diện được
 
 -Tới đây chỉ có thể unpack bằng tay: đặt bp tại `popad` rồi step đến khi gặp lên `jump` đó là `OEP` rồi dump hết memory segments ra
 
