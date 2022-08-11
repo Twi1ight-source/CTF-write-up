@@ -1,6 +1,6 @@
-** Reject to in inject
+**Reject to in inject
 
-*** Load file dll
+***Load file dll
 
 ```c
 # include <stdio.h> 
