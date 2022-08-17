@@ -23,3 +23,9 @@ for c in open('rockyou.txt', 'rb').readlines():
         print(c)
         break
  ```
+
+## Bogus
+
+### 1. VPERMD
+
+vpermd x1,x2,x3:  đem các phần tử từ mảng x3 sang x1 theo thứ tự được chỉ định trong x2
