@@ -191,16 +191,6 @@ rax>>0x16
 ebx<<=5
 ymm11=data[ebx]
 
-
-
-def cmpGreater(arr1, arr2):
-    res=[]
-    for i in range(8):
-        if arr1[i]>arr2[i]:
-            res.append((-1)&0xf)
-        else:
-            res.append(0)
-
 ymm0=copyOrder(ymm6, ymm0)
 ymm1=copyOrder(ymm7, ymm1)
 
