@@ -1,3 +1,3 @@
-## justCTF 2020:  `reverse pyc bị đổi opcode`, `namomites`
-## tamuCTF 2022: `capstone`
-## dctf 2022: `capstone`, `bfs`
+__ justCTF 2020:  `reverse pyc bị đổi opcode`, `namomites`
+__ tamuCTF 2022: `capstone`
+__ dctf 2022: `capstone`, `bfs`
